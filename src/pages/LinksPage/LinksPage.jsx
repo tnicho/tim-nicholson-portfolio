@@ -7,6 +7,7 @@ export default function LinksPage(props){
         <Box>
             <Typography>Links Page</Typography>
             <Typography>Page for Git Link, Resume</Typography>
+            <Typography>Include a thankyou and a confetti effect or fireworks or something</Typography>
         </Box>
     )
 }
