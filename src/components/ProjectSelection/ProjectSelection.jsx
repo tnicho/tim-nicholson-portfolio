@@ -13,7 +13,7 @@ export default function ProjectSelection(props) {
         }}
       >
         <ProjectSelectionCard 
-          title= "LiftOff" 
+          title= "Lift Off" 
           imagesrc ="./PortfolioPics/Screenshots/Lift Off Card Picture.png" 
           description = "A quicktime based Browser Game."
           technologies = "Javascript, HTML, CSS"
@@ -31,7 +31,7 @@ export default function ProjectSelection(props) {
           technologies ="Python, Django, HTML, CSS, TailwindCSS, PostgreSQL"
           />
         <ProjectSelectionCard 
-        title = "Ampless" 
+        title = "AMPLESS" 
         imagesrc = "./PortfolioPics/Screenshots/Ampless Card Picture.png"
         description = "A full CRUD, MERN web app for desktop to manipulate audio inputs."
         technologies = "Express, Node,js, MongoDB, React, Material UI, Web Audio API"
