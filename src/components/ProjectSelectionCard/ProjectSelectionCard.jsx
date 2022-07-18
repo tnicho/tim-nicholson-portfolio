@@ -7,14 +7,14 @@ export default function ProjectSelectionCard (props){
       <CardMedia
         component="img"
         alt="screenshot"
-        height="175"
+       //height="175"
         image={props.imagesrc}
       />
       <CardContent>
         <Typography variant="h5" component="div">{props.title}</Typography>
         <Typography variant="body2" color="text.secondary">{props.description}</Typography>
-        <Typography variant="body2" color="text.secondary">--------------------------------------------</Typography>
-        <Typography variant="body2" color="text.secondary">{props.technologies}</Typography>
+        {/* <Typography variant="body2" color="text.secondary">--------------------------------------------</Typography>
+        <Typography variant="body2" color="text.secondary">{props.technologies}</Typography> */}
       </CardContent>
     </Card>
   )
