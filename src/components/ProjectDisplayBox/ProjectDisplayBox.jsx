@@ -10,7 +10,8 @@ export default function ProjectDisplay(props){
       sx={{
           display:'flex',
           justifyContent: 'space-evenly',
-          background: "red"
+          background: "red",
+          height: '50vh'
         }}
       >
       <ScreenshotCarousel/>
