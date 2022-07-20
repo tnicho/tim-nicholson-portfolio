@@ -27,7 +27,7 @@ export default function ProjectSelection(props) {
         <ProjectSelectionCard 
           title ="Digipets Forever" 
           imagesrc="./PortfolioPics/Screenshots/Digipets Card Picture.png"
-          description = 'A full CRUD, "pet" creation, app for mobile made as part of a team of UX and programmers.'
+          description = 'A full CRUD app for mobile working on a team including UX Designers.'
           technologies ="Python, Django, HTML, CSS, TailwindCSS, PostgreSQL"
           />
         <ProjectSelectionCard 
