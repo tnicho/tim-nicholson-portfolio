@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Box,Typography } from '@mui/material'
 import Slider from "react-slick"
 
-export default function ScreenshotCarousel() {
-  var settings = {
+export default function ScreenshotCarousel () {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -22,5 +22,5 @@ export default function ScreenshotCarousel() {
           </div>
         </Slider>
       </Box>
-  )
+    )
 }
