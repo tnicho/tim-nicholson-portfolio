@@ -11,7 +11,8 @@ export default function ProjectDisplay(props){
           display:'flex',
           justifyContent: 'space-evenly',
           background: "red",
-          height: '50vh'
+          height: '60vh',
+          width: '80vw'
         }}
       >
       <ScreenshotCarousel/>
