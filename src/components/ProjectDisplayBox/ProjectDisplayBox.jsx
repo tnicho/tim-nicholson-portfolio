@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/system'
-import ScreenshotCarousel from '../ScreenshotCarousel/ScreenshotCarousel'
+import SimpleSlider from '../ScreenshotCarousel/ScreenshotCarousel'
 import ProjectDetails from '../ProjectDetails/ProjectDetails'
 
 export default function ProjectDisplay(props){
@@ -8,15 +8,14 @@ export default function ProjectDisplay(props){
   return(
     <Box
       sx={{
-          display:'flex',
-          justifyContent: 'space-evenly',
+          // display:'flex',
           background: "red",
-          height: '60vh',
+          height: '40vh',
           width: '80vw'
         }}
       >
-      <ScreenshotCarousel/>
-      <ProjectDetails/>
+      <SimpleSlider/>
+      {/* <ProjectDetails/> */}
     </Box>
   )
 }
