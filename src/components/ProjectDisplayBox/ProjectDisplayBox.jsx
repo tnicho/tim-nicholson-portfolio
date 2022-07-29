@@ -8,14 +8,13 @@ export default function ProjectDisplay(props){
   return(
     <Box
       sx={{
-          // display:'flex',
           background: "red",
           height: '40vh',
-          width: '80vw'
+          width: '60vw'
         }}
       >
       <SimpleSlider/>
-      {/* <ProjectDetails/> */}
+      <ProjectDetails/>
     </Box>
   )
 }
