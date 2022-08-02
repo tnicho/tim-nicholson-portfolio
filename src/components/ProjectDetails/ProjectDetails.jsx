@@ -1,10 +1,10 @@
 import React from 'react'
-import {Box} from '@mui/material'
+import {Box, Typography} from '@mui/material'
 
 export default function ProjectDetails() {
   return (
     <Box>
-        ProjectDetails
+        <Typography>ProjectDetails</Typography>
     </Box>
   )
 }

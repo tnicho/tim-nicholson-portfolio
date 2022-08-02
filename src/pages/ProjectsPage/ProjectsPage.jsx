@@ -1,7 +1,7 @@
 import React from "react"
 import {Typography, Box} from "@mui/material"
 import ProjectSelection from "../../components/ProjectSelection/ProjectSelection"
-import ProjectDisplay from "../../components/ProjectDisplayBox/ProjectDisplayBox"
+import ProjectDisplay from "../../components/ProjectDisplay/ProjectDisplay"
 
 export default function ProjectsPage(props){
   return(
