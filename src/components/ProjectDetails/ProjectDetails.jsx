@@ -4,13 +4,12 @@ import {Box, Typography, Link, Paper} from '@mui/material'
 export default function ProjectDetails() {
   return (
     <Paper 
-    elevation={24}
+    elevation={10}
     sx={{
       mr: 20,
-      my: 10,
+      my: 5,
       background: "blue",
-      height: '60vh',
-      width: '30vw'
+      height: 360,
     }}
     >
       <Typography sx={{color: "white"}}>PROJECT TITLE</Typography>

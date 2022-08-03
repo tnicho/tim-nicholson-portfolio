@@ -1,21 +1,23 @@
 import React from 'react'
-import { Box } from '@mui/system'
+import { Paper } from '@mui/material'
 import ScreenshotCarousel from '../ScreenshotCarousel/ScreenshotCarousel'
 
 export default function ProjectDisplay(props){
 
   return(
-    <Box
+    <Paper
+      elevation={10}
       sx={{
-          mx: 20,
-          my: 10,
+          ml: 20,
+          mr: 10,
+          my: 5,
           background: "red",
-          height: '60vh',
-          width: '50vw'
+          height: 360,
+          width: 640
         }}
       >
       <ScreenshotCarousel/>
       {/* <ProjectDetails/> */}
-    </Box>
+    </Paper>
   )
 }

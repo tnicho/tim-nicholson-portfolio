@@ -14,13 +14,12 @@ export default function ScreenshotCarousel () {
     };
     return (
       <Box>
-        <Typography>Carousel</Typography>
         <Slider {...settings}>
           <Box>
-            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={960} height={540}/>
+            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
           </Box>
           <Box>
-            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={960} height={540}/>
+            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
           </Box>
         </Slider>
       </Box>
