@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Typography, Link, Paper} from '@mui/material'
 
-export default function ProjectDetails() {
+export default function ProjectDetails(props) {
   return (
     <Paper 
     elevation={10}
@@ -12,31 +12,40 @@ export default function ProjectDetails() {
       height: 360,
     }}
     >
-      <Typography sx={{color: "white"}}>PROJECT TITLE</Typography>
+      <Typography sx={{color: "white", fontWeight:'bold', letterSpacing: 3}} variant="h4">{props.title}</Typography>
       <Box
         sx={{
           background: "#ADD8E6",
-          borderBottom: 1
+          borderBottom: 1,
+          height:'26vh',
         }}>
-          Description: The goal of LIFT OFF is to help your "Weightlifter" complete a "Clean and Press" in 
-          which one lifts a bar to the waist, the chest, and finally over the head. This goal is 
-          accomplished through a series of reflex-based mini games using the arrow keys (or buttons on mobile).
+          <Typography sx={{fontWeight:'bold'}}>Description</Typography>
+          <Typography align='left' sx={{px:1}}>{props.description}</Typography>
       </Box>
       <Box
         sx={{
             background: "#00008B",
             color: "white",
-            borderBottom: 1
+            borderBottom: 1,
+            height:'10vh'
           }}>
-            Technology Used: HTML, CSS, JavaScript, GitHub (hosting), and Canva (image creation)
+            <Typography>Technology Used</Typography>
+            <Typography> {props.tech}</Typography>
       </Box>
       <Box
         sx={{
             background: "#ADD8E6",
+            pb: 1
           }}>
-            Links: <br/>
-            Deployed: <Link href="https://tnicho.github.io/BrowserGame-LiftOff/">tnicho.github.io/BrowserGame-LiftOff</Link><br/>
-            Github: <Link href="https://github.com/tnicho/BrowserGame-LiftOff">github.com/tnicho/BrowserGame-LiftOff</Link>
+            <Typography>Links</Typography>
+            <Box
+              sx={{
+                  background: "#ADD8E6",
+                  display: "flex",
+                  justifyContent: 'space-around',
+                }}>
+            <Link href={props.linkDeployed}>Deployed App</Link> <Link href={props.linkGithub}>Github</Link>
+            </Box>
       </Box>
     </Paper>
   )

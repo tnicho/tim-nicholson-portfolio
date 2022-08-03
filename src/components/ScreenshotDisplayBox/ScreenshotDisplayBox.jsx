@@ -17,7 +17,6 @@ export default function ProjectDisplay(props){
         }}
       >
       <ScreenshotCarousel/>
-      {/* <ProjectDetails/> */}
     </Paper>
   )
 }
