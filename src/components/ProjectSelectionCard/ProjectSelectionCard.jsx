@@ -4,7 +4,9 @@ import {Box, Button, Card, CardMedia, CardContent, CardActions,  CardActionArea,
 export default function ProjectSelectionCard (props){
   return(
     <Card sx={{width:200}}>
-      <CardActionArea>
+      <CardActionArea
+        onClick = {props.handleProjectSelection}
+      >
         <CardMedia
           component="img"
           alt="screenshot"

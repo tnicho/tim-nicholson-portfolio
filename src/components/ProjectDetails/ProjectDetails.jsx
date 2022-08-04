@@ -10,6 +10,7 @@ export default function ProjectDetails(props) {
       my: 5,
       background: "blue",
       height: 360,
+      width: "20vw"
     }}
     >
       <Typography sx={{color: "white", fontWeight:'bold', letterSpacing: 3}} variant="h4">{props.title}</Typography>
