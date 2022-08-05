@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
 
-export default function ScreenshotCarousel () {
+export default function ScreenshotCarousel (props) {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,15 +12,20 @@ export default function ScreenshotCarousel () {
     slidesToShow: 1,
     slidesToScroll: 1
     };
+    const images = props.images
     return (
       <Box>
         <Slider {...settings}>
-          <Box>
+
+        {images.map(image => {
+          return <img  src={image}/>
+        })}
+          {/* <Box>
             <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
           </Box>
           <Box>
             <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
-          </Box>
+          </Box> */}
         </Slider>
       </Box>
     )

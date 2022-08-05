@@ -16,7 +16,7 @@ export default function ProjectDisplay(props){
           width: 640
         }}
       >
-      <ScreenshotCarousel/>
+      <ScreenshotCarousel images={["./PortfolioPics/Screenshots/MYIM Card Picture.png","./PortfolioPics/Screenshots/Ampless Card Picture.png","./PortfolioPics/Screenshots/MYIM Card Picture.png"]}/>
     </Paper>
   )
 }
