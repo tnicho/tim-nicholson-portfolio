@@ -12,14 +12,20 @@ export default function ScreenshotCarousel (props) {
     slidesToShow: 1,
     slidesToScroll: 1
     };
-    const screenshots = props.screenshots
+    const images = props.images
     return (
       <Box>
         <Slider {...settings}>
 
-        {screenshots.map(screenshot => {
-          return <img  src={screenshot}/>
+        {images.map(image => {
+          return <img  src={image}/>
         })}
+          {/* <Box>
+            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
+          </Box>
+          <Box>
+            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
+          </Box> */}
         </Slider>
       </Box>
     )
