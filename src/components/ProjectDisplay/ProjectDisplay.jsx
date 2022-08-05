@@ -11,7 +11,7 @@ export default function ProjectDisplay(props) {
           justifyContent: "space-evenly"
       }}
     >
-      <ScreenshotDisplayBox/>
+      <ScreenshotDisplayBox screenshots = {props.project.screenshots}/>
       <ProjectDetails 
       title = {props.project.title}
       description = {props.project.description}

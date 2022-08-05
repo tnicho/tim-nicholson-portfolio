@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import {Typography, Box} from "@mui/material"
 import ProjectSelection from "../../components/ProjectSelection/ProjectSelection"
 import ProjectDisplay from "../../components/ProjectDisplay/ProjectDisplay"
+import { getByDisplayValue } from "@testing-library/react";
+import { toHaveFormValues } from "@testing-library/jest-dom/dist/matchers";
 
 export default class ProjectsPage extends Component{
   state = {
@@ -9,7 +11,10 @@ export default class ProjectsPage extends Component{
     description: "AMPLESS description",
     tech: "AMPLESS tech",
     linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
-    linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff"}
+    linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
+    screenshots: ["./PortfolioPics/Screenshots/Ampless Login.png",
+    "./PortfolioPics/Screenshots/Ampless Signup.png", 
+    "./PortfolioPics/Screenshots/Ampless Main.png"]}
   };
 
   handleProjectSelection = (evt) => {
@@ -18,7 +23,8 @@ export default class ProjectsPage extends Component{
       description: "liftoff description",
       tech: "liftoff tech",
       linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
-      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff"
+      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
+      screenshots: []
     }
     const myYearInMedia ={
       title: "MY YEAR IN MEDIA",
@@ -39,9 +45,13 @@ export default class ProjectsPage extends Component{
       description: "AMPLESS description",
       tech: "AMPLESS tech",
       linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
-      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff"
+      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
+      screenshots: ["./PortfolioPics/Screenshots/Ampless Login.png",
+      "./PortfolioPics/Screenshots/Ampless Signup.png", 
+      "./PortfolioPics/Screenshots/Ampless Main.png"]
     }
 
+    // Animate out the project display, change values, annimate them in
     this.setState({
       [evt.target.name]: evt.target.value,
       error: "",
