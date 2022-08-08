@@ -17,7 +17,7 @@ export default class ProjectsPage extends Component{
 
   handleProjectSelection = (evt) => {
     console.log(evt)
-    const liftoff ={
+    const liftOff ={
       title: "LIFT OFF",
       description: "liftoff description",
       tech: "liftoff tech",
@@ -38,7 +38,8 @@ export default class ProjectsPage extends Component{
       description: "DIGIPETS FOREVER description",
       tech: "DIGIPETS FOREVER tech",
       linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
-      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff"
+      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
+      screenshots: []
     }
     const ampless ={
       title: "AMPLESS",
@@ -52,10 +53,28 @@ export default class ProjectsPage extends Component{
     }
     console.log("hello")
     // Animate out the project display, change values, annimate them in
-    if (evt.target.innerHTML === "My Year Of Media"){
+    if (evt.target.name === "Lift Off"){
+      console.log("inside if")
+      this.setState({
+        project: liftOff,
+        error: "",
+      });
+    }else if (evt.target.name === "My Year In Media"){
       console.log("inside if")
       this.setState({
         project: myYearInMedia,
+        error: "",
+      });
+    }else if (evt.target.name === "Digipets Forever"){
+      console.log("inside if")
+      this.setState({
+        project: digipetsForever,
+        error: "",
+      });
+    }else if (evt.target.name === "AMPLESS"){
+      console.log("inside if")
+      this.setState({
+        project: ampless,
         error: "",
       });
     }
