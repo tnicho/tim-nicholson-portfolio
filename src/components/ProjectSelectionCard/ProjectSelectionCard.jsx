@@ -5,11 +5,13 @@ export default function ProjectSelectionCard (props){
   return(
     <Card sx={{width:200}}>
       <CardActionArea
+        value={props.title}
         onClick = {props.handleProjectSelection}
       >
         <CardMedia
           component="img"
           alt="screenshot"
+          name={props.title}
           image={props.imagesrc}
         />
         <CardContent>

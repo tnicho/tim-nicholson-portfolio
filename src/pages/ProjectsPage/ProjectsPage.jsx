@@ -2,8 +2,6 @@ import React, { Component } from "react"
 import {Typography, Box} from "@mui/material"
 import ProjectSelection from "../../components/ProjectSelection/ProjectSelection"
 import ProjectDisplay from "../../components/ProjectDisplay/ProjectDisplay"
-import { getByDisplayValue } from "@testing-library/react";
-import { toHaveFormValues } from "@testing-library/jest-dom/dist/matchers";
 
 export default class ProjectsPage extends Component{
   state = {
@@ -18,6 +16,7 @@ export default class ProjectsPage extends Component{
   };
 
   handleProjectSelection = (evt) => {
+    console.log(evt)
     const liftoff ={
       title: "LIFT OFF",
       description: "liftoff description",
@@ -31,7 +30,8 @@ export default class ProjectsPage extends Component{
       description: "myim description",
       tech: "myim tech",
       linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
-      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff"
+      linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
+      screenshots: []
     }
     const digipetsForever ={
       title: "DIGIPETS FOREVER",
@@ -50,12 +50,16 @@ export default class ProjectsPage extends Component{
       "./PortfolioPics/Screenshots/Ampless Signup.png", 
       "./PortfolioPics/Screenshots/Ampless Main.png"]
     }
-
+    console.log("hello")
     // Animate out the project display, change values, annimate them in
-    this.setState({
-      [evt.target.name]: evt.target.value,
-      error: "",
-    });
+    if (evt.target.innerHTML === "My Year Of Media"){
+      console.log("inside if")
+      this.setState({
+        project: myYearInMedia,
+        error: "",
+      });
+    }
+   
 
 
   };
@@ -68,7 +72,7 @@ export default class ProjectsPage extends Component{
         <Typography>Show Options along the bottom as cards and selected as larger above with info and links</Typography>
         <Typography>Have show include a Slider of Screenshots</Typography>
         <Typography>Or USe Animations. Slide out the main slide(component) and slide in the selected while using React-animations to show selected square</Typography> */}
-        <ProjectSelection/>
+        <ProjectSelection handleProjectSelection = {this.handleProjectSelection}/>
         <ProjectDisplay project= {this.state.project}/>
       </Box>
     )

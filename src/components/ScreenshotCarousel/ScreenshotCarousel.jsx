@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import { Box,Typography } from '@mui/material'
+import React from 'react'
+import { Box} from '@mui/material'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
@@ -12,20 +12,13 @@ export default function ScreenshotCarousel (props) {
     slidesToShow: 1,
     slidesToScroll: 1
     };
-    const images = props.images
+    const screenshots = props.screenshots
     return (
       <Box>
         <Slider {...settings}>
-
-        {images.map(image => {
-          return <img  src={image}/>
+        {screenshots.map(screenshot => {
+          return <img  src={screenshot}/>
         })}
-          {/* <Box>
-            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
-          </Box>
-          <Box>
-            <img src="./PortfolioPics/Screenshots/MYIM Card Picture.png" width={640} height={360}/>
-          </Box> */}
         </Slider>
       </Box>
     )
