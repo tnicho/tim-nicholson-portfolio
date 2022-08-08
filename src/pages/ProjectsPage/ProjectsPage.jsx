@@ -23,7 +23,9 @@ export default class ProjectsPage extends Component{
       tech: "liftoff tech",
       linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
       linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
-      screenshots: []
+      screenshots: ["./PortfolioPics/Screenshots/Lift Off Main 1.png",
+      "./PortfolioPics/Screenshots/Lift Off Main 2.png",
+      "./PortfolioPics/Screenshots/Lift off Mobile.png"]
     }
     const myYearInMedia ={
       title: "MY YEAR IN MEDIA",
@@ -31,7 +33,8 @@ export default class ProjectsPage extends Component{
       tech: "myim tech",
       linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
       linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
-      screenshots: []
+      screenshots: ["./PortfolioPics/Screenshots/MYIM books.png",
+      "./PortfolioPics/Screenshots/MYIM movies.png",]
     }
     const digipetsForever ={
       title: "DIGIPETS FOREVER",
@@ -39,7 +42,9 @@ export default class ProjectsPage extends Component{
       tech: "DIGIPETS FOREVER tech",
       linkDeployed: "https://tnicho.github.io/BrowserGame-LiftOff/",
       linkGithub: "https://github.com/tnicho/BrowserGame-LiftOff",
-      screenshots: []
+      screenshots: ["./PortfolioPics/Screenshots/Digipets Login.png",
+      "./PortfolioPics/Screenshots/Digipets Mains.png",
+      "./PortfolioPics/Screenshots/Digipets Update.png"]
     }
     const ampless ={
       title: "AMPLESS",
@@ -59,7 +64,7 @@ export default class ProjectsPage extends Component{
         project: liftOff,
         error: "",
       });
-    }else if (evt.target.name === "My Year In Media"){
+    }else if (evt.target.name === "My Year Of Media"){
       console.log("inside if")
       this.setState({
         project: myYearInMedia,
