@@ -2,7 +2,7 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import LandingPage from '../LandingPage/LandingPage';
 import ProjectsPage from '../ProjectsPage/ProjectsPage';
-import SkillsPage from '../SkillsPage/SkillsPage';
+import AboutMePage from '../AboutMePage/AboutMePage';
 import LinksPage from '../LinksPage/LinksPage';
 
 export const Fullpage = () => (
@@ -27,7 +27,7 @@ export const Fullpage = () => (
             <ProjectsPage/>
           </div>
           <div className="section">
-            <SkillsPage/>
+            <AboutMePage/>
           </div>
           <div className="section">
             <LinksPage/>
