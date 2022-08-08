@@ -58,25 +58,25 @@ export default class ProjectsPage extends Component{
     }
     console.log("hello")
     // Animate out the project display, change values, annimate them in
-    if (evt.target.name === "Lift Off"){
+    if (evt.target.id === "Lift Off"){
       console.log("inside if")
       this.setState({
         project: liftOff,
         error: "",
       });
-    }else if (evt.target.name === "My Year Of Media"){
+    }else if (evt.target.id === "My Year Of Media"){
       console.log("inside if")
       this.setState({
         project: myYearInMedia,
         error: "",
       });
-    }else if (evt.target.name === "Digipets Forever"){
+    }else if (evt.target.id === "Digipets Forever"){
       console.log("inside if")
       this.setState({
         project: digipetsForever,
         error: "",
       });
-    }else if (evt.target.name === "AMPLESS"){
+    }else if (evt.target.id === "AMPLESS"){
       console.log("inside if")
       this.setState({
         project: ampless,

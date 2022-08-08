@@ -10,12 +10,12 @@ export default function ProjectSelectionCard (props){
         <CardMedia
           component="img"
           alt="screenshot"
-          name={props.title}
+          id={props.title}
           image={props.imagesrc}
         />
-        <CardContent>
-          <Typography variant="h6" component="div">{props.title}</Typography>
-          <Typography variant="body2" color="text.secondary">{props.description}</Typography>
+        <CardContent id={props.title}>
+          <Typography id={props.title} variant="h6" component="div">{props.title}</Typography>
+          <Typography id={props.title} variant="body2" color="text.secondary">{props.description}</Typography>
         </CardContent>
       </CardActionArea>
     </Card>
