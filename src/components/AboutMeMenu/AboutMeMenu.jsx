@@ -1,8 +1,7 @@
 import { Box } from '@mui/material'
 import React from 'react'
 
-export default function AboutMeMenu() {
-
+export default function AboutMeMenu(props) {
   return (
     <Box
       sx={{
@@ -25,8 +24,10 @@ export default function AboutMeMenu() {
             opacity: [0.9, 0.8, 0.7],
           },
       }}
+      id="biography"
+      onClick = {props.handleAboutChange}
       >
-        About Me:
+        Biography:
       </Box>
       <Box
         sx={{
@@ -40,6 +41,8 @@ export default function AboutMeMenu() {
             opacity: [0.9, 0.8, 0.7],
           },
       }}
+      id="technology"
+      onClick = {props.handleAboutChange}
       >
         Technologies:
       </Box>
@@ -55,6 +58,8 @@ export default function AboutMeMenu() {
             opacity: [0.9, 0.8, 0.7],
           },
       }}
+      id="education"
+      onClick = {props.handleAboutChange}
       >
         Education:
       </Box>
