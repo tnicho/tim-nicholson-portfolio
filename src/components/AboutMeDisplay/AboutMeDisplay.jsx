@@ -9,14 +9,20 @@ export default function AboutMeDisplay(props) {
 
   return (
     <Box>
-        <Transition direction="up" appear={true} mountOnEnter unmountOnExit in={true} timout={500}>
-          <BioDisplay/>
-        </Transition>
-        <Slide>
-          <SkillsDisplay/>
+        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={500}>
+          <Box>
+            <BioDisplay/>
+          </Box>
         </Slide>
-        <Slide>
+        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={500}>
+        <Box>
+          <SkillsDisplay/>
+        </Box>
+        </Slide>
+        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.educationShow} timeout={500}>
+        <Box>
           <EducationDisplay/>
+        </Box>
         </Slide> 
     </Box>
   )

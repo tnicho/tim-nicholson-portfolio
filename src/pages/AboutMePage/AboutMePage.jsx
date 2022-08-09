@@ -13,6 +13,8 @@ export default class AboutMePage extends Component{
 
   handleAboutChange = (evt) => {
     if (evt.target.id === 'education'){
+      console.log('edu')
+      console.log(this.state.educationShow)
       this.setState({
         bioShow: false,
         technologyShow: false,
@@ -20,6 +22,7 @@ export default class AboutMePage extends Component{
         error: "",
       });
     }else if (evt.target.id === 'technology'){
+      console.log('tech')
       this.setState({
         bioShow: false,
         technologyShow: true,
@@ -27,6 +30,7 @@ export default class AboutMePage extends Component{
         error: "",
       });
     }else if (evt.target.id === 'biography'){
+      console.log('bio')
       this.setState({
         bioShow: true,
         technologyShow: false,
@@ -44,7 +48,7 @@ export default class AboutMePage extends Component{
         <Box
         sx={{display: 'flex'}}>
             <AboutMeMenu handleAboutChange={this.handleAboutChange} />
-            <AboutMeDisplay bioShow = "false"/>
+            <AboutMeDisplay bioShow = {this.state.bioShow} technologyShow = {this.state.technologyShow} educationShow = {this.state.educationShow}/>
         </Box>
       </Box>
     )
