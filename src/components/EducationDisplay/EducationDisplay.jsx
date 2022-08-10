@@ -6,6 +6,8 @@ export default function EducationDisplay() {
     <Paper sx={{margin:'10px'}}>
       <Typography>Education Display</Typography>
       <Typography>This page will Show my education with a brief description</Typography>
+      <img height="100px" src="./Western Logo.jpg"/>
+      <img height="100px" src="./GA Logo.jpg"/>
     </Paper>
   )
 }

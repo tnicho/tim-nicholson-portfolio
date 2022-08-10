@@ -9,9 +9,10 @@ export default function AboutMeDisplay(props) {
   return (
     <Box
     sx={{
-      height: '100vh',
+      width: '60vw',
       display: 'flex',
       alignItems: 'center',
+      justifyContent: 'center',
     }}
     >
         <Slide style={{ transitionDelay: 1000, zIndex: 'tooltip' }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 300, exit: 500}}>
