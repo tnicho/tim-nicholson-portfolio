@@ -8,18 +8,24 @@ import { Transition } from 'react-transition-group'
 export default function AboutMeDisplay(props) {
 
   return (
-    <Box>
-        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={500}>
+    <Box
+    sx={{
+      height: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+    }}
+    >
+        <Slide style={{ transitionDelay: 1000 }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{appear: 2000, enter: 300, exit: 500}}>
           <Box>
             <BioDisplay/>
           </Box>
         </Slide>
-        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={500}>
+        <Slide style={{ transitionDelay: 1000 }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={500}>
         <Box>
           <SkillsDisplay/>
         </Box>
         </Slide>
-        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.educationShow} timeout={500}>
+        <Slide style={{ transitionDelay: 1000 }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.educationShow} timeout={500}>
         <Box>
           <EducationDisplay/>
         </Box>

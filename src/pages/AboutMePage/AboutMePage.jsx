@@ -42,13 +42,40 @@ export default class AboutMePage extends Component{
 
   render (){
     return(
-      <Box>
-        <Typography>Skills PAge</Typography>
-        <Typography>Logos and Names of Skills</Typography>
+      <Box
+      sx={{
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        backgroundColor: 'pink',
+      }}>
         <Box
-        sx={{display: 'flex'}}>
-            <AboutMeMenu handleAboutChange={this.handleAboutChange} />
-            <AboutMeDisplay bioShow = {this.state.bioShow} technologyShow = {this.state.technologyShow} educationShow = {this.state.educationShow}/>
+          sx={{
+            height: '10vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            backgroundColor: 'pink',
+          }}
+        >
+          <Typography>Skills Page</Typography>
+          <Typography>Logos and Names of Skills</Typography>
+        </Box>
+        <Box
+          sx={{
+            height: '90vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            backgroundColor: 'yellow',
+          }}
+        >
+          <Box
+          sx={{display: 'flex'}}>
+              <AboutMeMenu handleAboutChange={this.handleAboutChange} />
+              <AboutMeDisplay bioShow = {this.state.bioShow} technologyShow = {this.state.technologyShow} educationShow = {this.state.educationShow}/>
+          </Box>
         </Box>
       </Box>
     )

@@ -5,6 +5,7 @@ export default function AboutMeMenu(props) {
   return (
     <Box
       sx={{
+        height:'100%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -19,6 +20,7 @@ export default function AboutMeMenu(props) {
           width:'40vw',
           alignItems: 'center',
           justifyContent: 'center',
+          backgroundColor: 'purple',
           '&:hover': {
             backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
@@ -36,6 +38,7 @@ export default function AboutMeMenu(props) {
           width:'40vw',
           alignItems: 'center',
           justifyContent: 'center',
+          backgroundColor: 'purple',
           '&:hover': {
             backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
@@ -53,6 +56,7 @@ export default function AboutMeMenu(props) {
           width:'40vw',
           alignItems: 'center',
           justifyContent: 'center',
+          backgroundColor: 'purple',
           '&:hover': {
             backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
