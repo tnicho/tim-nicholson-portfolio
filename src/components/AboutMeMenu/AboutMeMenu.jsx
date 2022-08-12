@@ -17,7 +17,7 @@ export default function AboutMeMenu(props) {
         sx={{
           display: 'flex',
           height: '20vh',
-          width:'40vw',
+          width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
           backgroundColor: 'purple',
@@ -35,7 +35,7 @@ export default function AboutMeMenu(props) {
         sx={{
           display: 'flex',
           height: '20vh',
-          width:'40vw',
+          width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
           backgroundColor: 'purple',
@@ -53,7 +53,7 @@ export default function AboutMeMenu(props) {
         sx={{
           display: 'flex',
           height: '20vh',
-          width:'40vw',
+          width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
           backgroundColor: 'purple',
