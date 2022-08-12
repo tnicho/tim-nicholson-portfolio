@@ -4,24 +4,23 @@ import { Paper, Typography, Box} from '@mui/material'
 export default function EducationDisplay() {
   return (
     <Paper sx={{margin:'10px'}}>
-      <Typography>Education Display</Typography>
-      <Typography>This page will Show my education with a brief description</Typography>
-      <Box
-        sx={{
-          display:'flex'
-        }}>
+      <Typography variant='h3'>EDUCATION</Typography>
+      <Box sx={{display:'flex'}}>
         <img height="100px" src="./Western Logo.jpg"/>
         <Box>
-          <Box>
-            <Typography>Western University</Typography>
+          <Box sx={{
+            display:'flex',
+            justifyContent:'space-between',
+            }}>
+            <Typography fontWeight='bold'>Western University</Typography>
             <Box>
-              <Typography>B.Eng in Electrical Engineering</Typography>
+              <Typography fontWeight='bold'>B.Eng in Electrical Engineering</Typography>
             </Box>
           </Box>
           <Box>
-            <Typography>
+            <Typography align='left'>
               Graduated Western University with a degree in Electrical Engineering.
-              Along with the Math and technical skill, this is where I learned teamwork, 
+              Along with the math and technical skill, this is where I learned teamwork, 
               overcoming obsticles, and final push needed to complete a project or task
               that mere months ago felt undoable.
             </Typography>
@@ -33,17 +32,20 @@ export default function EducationDisplay() {
       >
         <img height="100px" src="./GA Logo.jpg"/>
         <Box>
-          <Box>
-              <Typography>General Assembly</Typography>
+          <Box sx={{
+            display:'flex',
+            justifyContent:'space-between'
+            }}>
+              <Typography fontWeight='bold'>General Assembly</Typography>
               <Box>
-                <Typography>Software Engineering Intensive</Typography>
+                <Typography fontWeight='bold'>Software Engineering Intensive</Typography>
               </Box>
             </Box>
             <Box>
-              <Typography>
-              3 Month intensive bootcamp consisting of over 450 hours of building 
-              fluency in full-stack web development with a focus on object-oriented programming, 
-              MVC Frameworks, team colaboration strategies, and best coding practices.
+              <Typography align='left'>
+                3 Month intensive bootcamp consisting of over 450 hours of building 
+                fluency in full-stack web development with a focus on object-oriented programming, 
+                MVC Frameworks, team colaboration strategies, and best coding practices.
               </Typography>
             </Box>
           </Box>
