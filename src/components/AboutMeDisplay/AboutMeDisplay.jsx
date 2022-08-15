@@ -15,12 +15,12 @@ export default function AboutMeDisplay(props) {
       justifyContent: 'center',
     }}
     >
-        <Slide style={{ transitionDelay: 1000, zIndex: 'drawer' }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 300, exit: 300}}>
+        <Slide style={{ transitionDelay: 1000, zIndex: 'drawer' }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 300, exit: 0}}>
           <Box style={{zIndex: 'drawer' }}>
             <BioDisplay/>
           </Box>
         </Slide>
-        <Slide style={{ transitionDelay: 1000, zIndex: 'modal' }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={{ enter: 300, exit: 300}}>
+        <Slide style={{ transitionDelay: 1000, zIndex: 'modal' }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={{ enter: 300, exit: 0}}>
         <Box style={{zIndex: 'modal' }}>
           <SkillsDisplay/>
         </Box>
