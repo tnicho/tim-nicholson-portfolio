@@ -3,10 +3,10 @@ import { Paper, Typography, Box} from '@mui/material'
 
 export default function EducationDisplay() {
   return (
-    <Paper sx={{margin:'10px'}}>
+    <Paper sx={{margin:'10px', width: '40vw', height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
       <Typography variant='h3'>EDUCATION</Typography>
       <Box sx={{display:'flex'}}>
-        <img height="100px" src="./Western Logo.jpg"/>
+        <img margin ='5px' height="100px" src="./Western Logo.jpg"/>
         <Box my={3}>
           <Box sx={{
             display:'flex',

@@ -9,6 +9,9 @@ export default class AboutMePage extends Component{
     bioShow: true,
     technologyShow: false,
     educationShow: false,
+    zIndexBio: 'tooltip',
+    zIndexTechnology: 'modal',
+    zIndexEducation: 'modal',
   }
 
   handleAboutChange = (evt) => {
@@ -19,6 +22,9 @@ export default class AboutMePage extends Component{
         bioShow: false,
         technologyShow: false,
         educationShow: true,
+        zIndexBio: 'modal',
+        zIndexTechnology: 'modal',
+        zIndexEducation: 'tooltip',
         error: "",
       });
     }else if (evt.target.id === 'technology'){
@@ -27,6 +33,9 @@ export default class AboutMePage extends Component{
         bioShow: false,
         technologyShow: true,
         educationShow: false,
+        zIndexBio: 1300,
+        zIndexTechnology: 1500,
+        zIndexEducation: 1300,
         error: "",
       });
     }else if (evt.target.id === 'biography'){
@@ -35,6 +44,9 @@ export default class AboutMePage extends Component{
         bioShow: true,
         technologyShow: false,
         educationShow: false,
+        zIndexBio: 1500,
+        zIndexTechnology: 1300,
+        zIndexEducation: 1300,
         error: "",
       });
     }
@@ -74,7 +86,13 @@ export default class AboutMePage extends Component{
           <Box
           sx={{display: 'flex'}}>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />
-              <AboutMeDisplay bioShow = {this.state.bioShow} technologyShow = {this.state.technologyShow} educationShow = {this.state.educationShow}/>
+              <AboutMeDisplay 
+                bioShow = {this.state.bioShow} 
+                technologyShow = {this.state.technologyShow} 
+                educationShow = {this.state.educationShow}
+                zIndexBio = {this.state.zIndexBio}
+                zIndexTechnology = {this.state.zIndexTechnology}
+                zIndexEducation = {this.state.zIndexEducation}/>
           </Box>
         </Box>
       </Box>
