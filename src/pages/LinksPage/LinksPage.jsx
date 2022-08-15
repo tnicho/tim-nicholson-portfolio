@@ -8,7 +8,7 @@ export default function LinksPage(props){
     return(
         <Box>
             <Typography>Links Page</Typography>
-            <Typography>Page for Git Link, Resume</Typography>
+            <Typography>Thank you for Visiting my Page!</Typography>
             <Typography>Include a thankyou and a confetti effect or fireworks or something</Typography>
             <Box sx={{display:'flex'}}>
                 <ContactMeDisplay/>
