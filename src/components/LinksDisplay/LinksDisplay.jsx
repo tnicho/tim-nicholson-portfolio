@@ -1,5 +1,6 @@
 import React from 'react'
 import {Box, Typography} from "@mui/material"
+import { flexbox } from '@mui/system'
 
 
 export default function LinkDisplay() {
@@ -15,7 +16,11 @@ export default function LinkDisplay() {
         <Box
           sx={{
             mx:'3vw',
-            my:'1vw'
+            my:'1vw',
+            '&:hover': {
+              backgroundColor: 'primary.main',
+              opacity: [0.9, 0.8, 0.7],
+            },
           }}
         >
           <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
@@ -24,21 +29,41 @@ export default function LinkDisplay() {
         <Box
           sx={{
             mx:'3vw',
-            my:'1vw'
+            my:'1vw',
+            '&:hover': {
+              backgroundColor: 'primary.main',
+              opacity: [0.9, 0.8, 0.7],
+            },
           }}
         >
           <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
           <Typography>LinkedIn</Typography>
         </Box>
       </Box>
-      <Typography>Or download my resume directly by clicking below</Typography>
+      
       <Box
         sx={{
           mx:'3vw',
-          my:'1vw'
+          my:'1vw',
+          display: 'flex',
+          flexDirection:'column',
+          justifyContent:'center',
+          alignItems:'center'
         }}      
       >
-      <img height = "400px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
+        <Typography>Or download my resume directly by clicking below</Typography>
+        <Box
+          sx={{
+          height:"400px",
+          width:"310px",
+          '&:hover': {
+            backgroundColor: 'primary.main',
+            opacity: [0.9, 0.8, 0.7],
+          },
+        }} 
+        >
+          <img height = "400px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
+        </Box>
       </Box>
     </Box>
   )
