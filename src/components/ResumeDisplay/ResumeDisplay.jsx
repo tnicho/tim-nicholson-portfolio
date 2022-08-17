@@ -4,10 +4,15 @@ import LinkDisplay from "../../components/LinksDisplay/LinksDisplay"
 
 export default function ResumeDisplay() {
   return (
-    <Box>
+    <Box
+      sx={{
+        m: "5vw",
+        width: "50vw",
+        bgcolor: 'purple'
+      }}
+    >
         ResumeDisplay
         <LinkDisplay/>
-        For more information on me please visit my Github HEre and my LinkedIn HEre or Download my resume
     </Box>
   )
 }
