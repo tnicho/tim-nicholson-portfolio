@@ -5,7 +5,11 @@ export default function ContactMeDisplay() {
   return (
     <Box
     sx={{
-      // m: "5vw",
+      mx: "5vw",
+      my: '5vh',
+      py: '5vh',
+      // mt: '10vh',
+      // mb: "5vh",
       width: "50vw",
       bgcolor: 'purple'
     }}
