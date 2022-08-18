@@ -5,7 +5,7 @@ export default function ContactMeDisplay() {
   return (
     <Box
     sx={{
-      m: "5vw",
+      // m: "5vw",
       width: "50vw",
       bgcolor: 'purple'
     }}

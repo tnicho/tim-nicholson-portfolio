@@ -20,10 +20,12 @@ export default function AboutMeMenu(props) {
           width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'purple',
+          typography: 'h4',
           '&:hover': {
             backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
+            typography: 'h2',
+            cursor: 'pointer'
           },
       }}
       id="biography"
@@ -38,10 +40,12 @@ export default function AboutMeMenu(props) {
           width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'purple',
+          typography: 'h4',
           '&:hover': {
             backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
+            typography: 'h2',
+            cursor: 'pointer'
           },
       }}
       id="technology"
@@ -56,10 +60,12 @@ export default function AboutMeMenu(props) {
           width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'purple',
+          typography: 'h4',
           '&:hover': {
             backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
+            typography: 'h2',
+            cursor: 'pointer'
           },
       }}
       id="education"

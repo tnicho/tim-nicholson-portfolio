@@ -59,28 +59,11 @@ export default class AboutMePage extends Component{
     return(
       <Box
       sx={{
-        height: 'window',
         mt:'60px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        backgroundColor: 'pink',
+        backgroundColor: 'black',
       }}>
         <Box
           sx={{
-            height: '10vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            backgroundColor: 'pink',
-          }}
-        >
-          <Typography>Skills Page</Typography>
-          <Typography>Logos and Names of Skills</Typography>
-        </Box>
-        <Box
-          sx={{
-            height: '90vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -88,7 +71,10 @@ export default class AboutMePage extends Component{
           }}
         >
           <Box
-          sx={{display: 'flex'}}>
+          sx={{
+            display: 'flex',
+            p: '15vh',
+            }}>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />
               <AboutMeDisplay 
                 bioShow = {this.state.bioShow} 

@@ -90,12 +90,11 @@ export default class ProjectsPage extends Component{
 
   render(){
     return(
-      <Box>
-        <Typography>Projects  Page</Typography>
-        {/* <Typography>Uses a  slider for the projects you present</Typography>
-        <Typography>Show Options along the bottom as cards and selected as larger above with info and links</Typography>
-        <Typography>Have show include a Slider of Screenshots</Typography>
-        <Typography>Or USe Animations. Slide out the main slide(component) and slide in the selected while using React-animations to show selected square</Typography> */}
+      <Box
+        sx={{
+          mt: '80px'
+        }}
+      >
         <ProjectSelection handleProjectSelection = {this.handleProjectSelection}/>
         <ProjectDisplay project= {this.state.project}/>
       </Box>

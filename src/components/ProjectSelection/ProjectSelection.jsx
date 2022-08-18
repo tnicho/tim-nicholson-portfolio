@@ -4,8 +4,6 @@ import ProjectSelectionCard from "../ProjectSelectionCard/ProjectSelectionCard"
 
 export default function ProjectSelection(props) {
   return(
-    <Box>
-      <Typography>Project Selection Bar</Typography>
       <Box
         sx={{
           display:'flex',
@@ -41,6 +39,5 @@ export default function ProjectSelection(props) {
         handleProjectSelection = {props.handleProjectSelection}
         />
       </Box>
-    </Box>
 )
 }
