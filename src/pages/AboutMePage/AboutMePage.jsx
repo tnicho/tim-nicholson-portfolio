@@ -1,7 +1,8 @@
-import React, { Component } from "react"
+import React, { Component, Dimensions } from "react"
 import {Box, Typography} from "@mui/material"
 import AboutMeMenu from "../../components/AboutMeMenu/AboutMeMenu"
 import AboutMeDisplay from "../../components/AboutMeDisplay/AboutMeDisplay"
+
 
 
 export default class AboutMePage extends Component{
@@ -13,6 +14,7 @@ export default class AboutMePage extends Component{
     zIndexTechnology: 'modal',
     zIndexEducation: 'modal',
   }
+
 
   handleAboutChange = (evt) => {
     if (evt.target.id === 'education'){
@@ -53,10 +55,12 @@ export default class AboutMePage extends Component{
   }
 
   render (){
+    
     return(
       <Box
       sx={{
-        height: '100vh',
+        height: 'window',
+        mt:'60px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
