@@ -19,7 +19,12 @@ export default function LinkDisplay() {
             '&:hover': {
               backgroundColor: 'primary.main',
               opacity: [0.9, 0.8, 0.7],
+              cursor: 'pointer',
             },
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            window.open("https://github.com/tnicho")
           }}
         >
           <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
@@ -32,7 +37,12 @@ export default function LinkDisplay() {
             '&:hover': {
               backgroundColor: 'primary.main',
               opacity: [0.9, 0.8, 0.7],
+              cursor: 'pointer', 
             },
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            window.open("https://www.linkedin.com/in/timothyrinicholson/")
           }}
         >
           <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
@@ -58,7 +68,12 @@ export default function LinkDisplay() {
           '&:hover': {
             backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
+            cursor: 'pointer'
           },
+        }}
+        onClick={(e) => {
+          e.preventDefault();
+          window.open("https://www.linkedin.com/in/timothyrinicholson/")
         }} 
         >
           <img height = "400px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
