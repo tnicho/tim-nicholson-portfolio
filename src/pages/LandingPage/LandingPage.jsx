@@ -2,6 +2,9 @@ import React, {Component} from "react"
 import {Box, Typography} from "@mui/material"
 import randomColor from "randomcolor"
 import {ReactComponent as TimLogo} from '../../1.svg';
+import WelcomeButton from "../../components/WelcomeButton/WelcomeButton";
+
+
 
 export default class LandingPage extends Component {
   state={
@@ -10,6 +13,7 @@ export default class LandingPage extends Component {
     logoFillColour: 'black',
     logoStrokeColour: "black"
   }
+  
 
   handleLogoChange = (evt) =>{
     const newBackgroundColor = randomColor()
@@ -44,6 +48,7 @@ export default class LandingPage extends Component {
 
   }
   render (){ 
+    
     return (
       <Box
         sx={{
@@ -67,15 +72,7 @@ export default class LandingPage extends Component {
           {/* <img src = {"./Logo Colours/" + this.state.logoNumber + ".png"}/> */}
           <TimLogo fill={this.state.logoFillColour} stroke={this.state.logoStrokeColour}/>
         </Box>
-        <Box
-          sx={{
-            '&:hover': {
-              cursor: 'pointer'
-            },
-          }}
-        >
-        <Typography>Welcome</Typography>
-        </Box>
+        <WelcomeButton/>
       </Box>
     )
   }
