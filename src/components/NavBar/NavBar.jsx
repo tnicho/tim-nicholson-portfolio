@@ -18,6 +18,7 @@ export default function NavBar() {
         margin: '0',
         zIndex: '9',
       }}>
+          <Box data-menuanchor="landingPage" class="active"><a href="#landingPage">landingPage</a></Box>
           <Box data-menuanchor="projectPage" class="active"><a href="#projectPage">projectPage</a></Box>
           <Box data-menuanchor="aboutMePage"><a href="#aboutMePage">aboutMePage</a></Box>
           <Box data-menuanchor="linksPage"><a href="#linksPage">linksPage</a></Box>

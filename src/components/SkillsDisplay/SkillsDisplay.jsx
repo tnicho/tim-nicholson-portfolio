@@ -3,7 +3,17 @@ import React from 'react'
 
 export default function SkillsDisplay() {
   return (
-    <Paper sx={{margin:'10px', width: '40vw', height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
+    <Paper 
+      elevation = {20}
+      sx={{
+        margin:'10px', 
+        width: '40vw', 
+        height: '60vh', 
+        display: 'flex', 
+        flexDirection:'column', 
+        justifyContent:'space-evenly',
+        zIndex: 'modal'}}
+      >
       <Typography variant='h3'>TECHNOLOGIES</Typography>
         <Box>
           <Typography variant="h5">Front End:</Typography>

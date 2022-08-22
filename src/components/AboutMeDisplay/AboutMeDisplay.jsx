@@ -10,23 +10,21 @@ export default function AboutMeDisplay(props) {
     <Box
     sx={{
       width: '60vw',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
+      ml: '10vw'
     }}
     >
-        <Slide sx={{ zIndex: 'drawer'}}style={{ transitionDelay: 1000 }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 300, exit: 300}}>
-          <Box style={{zIndex: 'drawer' }}>
+        <Slide sx={{ zIndex: 'tooltip'}} direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 1000, exit: 0}}>
+          <Box  sx={{ zIndex: 'tooltip'}}>
             <BioDisplay/>
           </Box>
         </Slide>
-        <Slide style={{ transitionDelay: 1000, zIndex: 'modal' }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={{ enter: 300, exit: 300}}>
-        <Box style={{zIndex: 'modal' }}>
+        <Slide sx={{ zIndex: 'modal'}} direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={{ enter: 1000, exit: 0}}>
+        <Box  sx={{ zIndex: 'modal'}}>
           <SkillsDisplay/>
         </Box>
         </Slide>
-        <Slide style={{ transitionDelay: 1000, zIndex: 'tooltip' }} direction="up" appear={true} mountOnEnter unmountOnExit in={props.educationShow} timeout={500}>
-        <Box style={{zIndex: 'modal' }}>
+        <Slide sx={{ zIndex: 'drawer'}} direction="up" appear={true} mountOnEnter unmountOnExit in={props.educationShow} timeout={{ enter: 1000, exit: 0}}>
+        <Box  sx={{ zIndex: 'drawer'}} style={{zIndex: 'drawer' }}>
           <EducationDisplay/>
         </Box>
         </Slide> 

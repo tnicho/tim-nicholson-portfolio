@@ -12,7 +12,7 @@ export const Fullpage = () => (
     menu= '#myMenu'
     css3='true'
     licenseKey = {'YOUR_KEY_HERE'}
-    anchors = {["projectPage", "aboutMePage", "linksPage"]}
+    anchors = {["landingPage", "projectPage", "aboutMePage", "linksPage"]}
     scrollingSpeed = {1000} /* Options here */
     sectionsColor={['#E1C699', '#ff5f45', '#0798ec', '#282c34']}
     render={({ state, fullpageApi }) => {
@@ -27,6 +27,9 @@ export const Fullpage = () => (
           <div className="section">
             <LandingPage/>
           </div> */}
+          <div className="section">
+            <LandingPage/>
+          </div>
           <div className="section">
             <ProjectsPage/>
           </div>
