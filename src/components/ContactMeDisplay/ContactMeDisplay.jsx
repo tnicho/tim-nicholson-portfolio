@@ -11,11 +11,10 @@ export default function ContactMeDisplay() {
       // mt: '10vh',
       // mb: "5vh",
       width: "50vw",
-      bgcolor: 'purple'
+      bgcolor: 'inherit'
     }}
     >
       <Typography variant='h3'>I'd love to hear from you</Typography>
-        Contact Me through linkedIn Here or directly through email and I will get back to you as soon as I'm able.
       <Box
         component="form"
         sx={{
