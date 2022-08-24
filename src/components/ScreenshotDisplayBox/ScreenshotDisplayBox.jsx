@@ -6,7 +6,7 @@ export default function ProjectDisplay(props){
 
   return(
     <Paper
-      elevation={10}
+      elevation={20}
       sx={{
           ml: 20,
           mr: 10,

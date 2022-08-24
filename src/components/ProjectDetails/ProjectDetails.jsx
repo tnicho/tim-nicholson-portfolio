@@ -4,7 +4,7 @@ import {Box, Typography, Link, Paper} from '@mui/material'
 export default function ProjectDetails(props) {
   return (
     <Paper 
-    elevation={10}
+    elevation={20}
     sx={{
       mr: 20,
       my: 5,

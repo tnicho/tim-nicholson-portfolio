@@ -71,12 +71,10 @@ export default function LinkDisplay() {
             cursor: 'pointer'
           },
         }}
-        onClick={(e) => {
-          e.preventDefault();
-          window.open("https://www.linkedin.com/in/timothyrinicholson/")
-        }} 
         >
-          <img height = "400px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
+          <a href = './Timothy Nicholson Resume.pdf' download="Timothy Nicholson Resume">
+            <img height = "400px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
+          </a>
         </Box>
       </Box>
     </Box>

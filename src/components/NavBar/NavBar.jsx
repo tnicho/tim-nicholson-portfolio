@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box} from '@mui/material'
+import {Box, Link} from '@mui/material'
 
 export default function NavBar() {
   return (
@@ -13,15 +13,24 @@ export default function NavBar() {
         justifyContent: 'space-evenly',
         width: '100%',
         height: '60px',
-        bgcolor: 'orange',
+        bgcolor: '#1B721B',
+        color: '#FFFFFF',
         top: '0',
         margin: '0',
         zIndex: '9',
       }}>
-          <Box data-menuanchor="landingPage" class="active"><a href="#landingPage">landingPage</a></Box>
-          <Box data-menuanchor="projectPage" class="active"><a href="#projectPage">projectPage</a></Box>
-          <Box data-menuanchor="aboutMePage"><a href="#aboutMePage">aboutMePage</a></Box>
-          <Box data-menuanchor="linksPage"><a href="#linksPage">linksPage</a></Box>
+          <Box data-menuanchor="landingPage" class="active">
+            <Link href="#landingPage" color="inherit" variant="h4" underline="none">Home</Link>
+          </Box>
+          <Box data-menuanchor="projectPage">
+            <Link href="#projectPage" color="inherit" variant="h4" underline="none">Projects</Link>
+          </Box>
+          <Box data-menuanchor="aboutMePage">
+            <Link href="#aboutMePage" color="inherit" variant="h4" underline="none">About Me</Link>
+          </Box>
+          <Box data-menuanchor="linksPage">
+            <Link href="#linksPage" color="inherit" variant="h4" underline="none">Contact</Link>
+          </Box>
     </Box>
   )
 }

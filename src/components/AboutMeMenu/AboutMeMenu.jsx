@@ -10,7 +10,7 @@ export default function AboutMeMenu(props) {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'blue',
+        backgroundColor: 'inherit',
       }}
     >
       <Box
@@ -22,7 +22,8 @@ export default function AboutMeMenu(props) {
           justifyContent: 'center',
           typography: 'h4',
           '&:hover': {
-            backgroundColor: 'primary.main',
+            // backgroundColor: 'primary.main',
+            backgroundColor: '#A9D2AB',
             opacity: [0.9, 0.8, 0.7],
             typography: 'h2',
             cursor: 'pointer'
@@ -42,7 +43,7 @@ export default function AboutMeMenu(props) {
           justifyContent: 'center',
           typography: 'h4',
           '&:hover': {
-            backgroundColor: 'primary.main',
+            backgroundColor: '#A9D2AB',
             opacity: [0.9, 0.8, 0.7],
             typography: 'h2',
             cursor: 'pointer'
@@ -62,7 +63,7 @@ export default function AboutMeMenu(props) {
           justifyContent: 'center',
           typography: 'h4',
           '&:hover': {
-            backgroundColor: 'primary.main',
+            backgroundColor: '#A9D2AB',
             opacity: [0.9, 0.8, 0.7],
             typography: 'h2',
             cursor: 'pointer'

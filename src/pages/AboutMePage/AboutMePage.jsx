@@ -60,14 +60,12 @@ export default class AboutMePage extends Component{
       <Box
       sx={{
         mt:'60px',
-        backgroundColor: 'black',
       }}>
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            backgroundColor: 'yellow',
           }}
         >
           <Box
