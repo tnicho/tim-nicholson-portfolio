@@ -10,10 +10,9 @@ export default function ResumeDisplay() {
         mt: '10vh',
         mb: "5vh",
         width: "50vw",
-        bgcolor: 'purple'
+        bgcolor: 'inherit'
       }}
     >
-        ResumeDisplay
         <LinkDisplay/>
     </Box>
   )
