@@ -15,11 +15,11 @@ export default class AboutMePage extends Component{
     zIndexEducation: 'modal',
   }
 
-
-  handleAboutChange = (evt) => {
-    if (evt.target.id === 'education'){
+  finishAboutChange =() =>{
+    console.log('inside About Change')
+    console.log(this.state.showWaiting)
+    if (this.state.showWaiting === 'education'){
       console.log('edu')
-      console.log(this.state.educationShow)
       this.setState({
         bioShow: false,
         technologyShow: false,
@@ -29,7 +29,7 @@ export default class AboutMePage extends Component{
         zIndexEducation: 'tooltip',
         error: "",
       });
-    }else if (evt.target.id === 'technology'){
+    }else if (this.state.showWaiting === 'technology'){
       console.log('tech')
       this.setState({
         bioShow: false,
@@ -40,7 +40,8 @@ export default class AboutMePage extends Component{
         zIndexEducation: 1300,
         error: "",
       });
-    }else if (evt.target.id === 'biography'){
+
+    }else if (this.state.showWaiting === 'biography'){
       console.log('bio')
       this.setState({
         bioShow: true,
@@ -52,7 +53,73 @@ export default class AboutMePage extends Component{
         error: "",
       });
     }
+
   }
+
+  handleAboutChange = (evt) => {
+    this.setState({
+      bioShow: false,
+      technologyShow: false,
+      educationShow: false,
+      showWaiting: evt.target.id,
+      zIndexBio: 1300,
+      zIndexTechnology: 1500,
+      zIndexEducation: 1300,
+      error: "",
+    });
+    setTimeout(() =>this.finishAboutChange(), 1100)
+
+  }
+
+
+  // handleAboutChange = (evt) => {
+  //   if (evt.target.id === 'education'){
+  //     console.log('edu')
+  //     console.log(this.state.educationShow)
+  //     this.setState({
+  //       bioShow: false,
+  //       technologyShow: false,
+  //       educationShow: true,
+  //       zIndexBio: 'modal',
+  //       zIndexTechnology: 'modal',
+  //       zIndexEducation: 'tooltip',
+  //       error: "",
+  //     });
+  //   }else if (evt.target.id === 'technology'){
+  //     console.log('tech')
+  //     this.setState({
+  //       bioShow: false,
+  //       technologyShow: false,
+  //       educationShow: false,
+  //       zIndexBio: 1300,
+  //       zIndexTechnology: 1500,
+  //       zIndexEducation: 1300,
+  //       error: "",
+  //     });
+  //     setTimeout(1000)
+  //     this.setState({
+  //       bioShow: false,
+  //       technologyShow: true,
+  //       educationShow: false,
+  //       zIndexBio: 1300,
+  //       zIndexTechnology: 1500,
+  //       zIndexEducation: 1300,
+  //       error: "",
+  //     });
+
+  //   }else if (evt.target.id === 'biography'){
+  //     console.log('bio')
+  //     this.setState({
+  //       bioShow: true,
+  //       technologyShow: false,
+  //       educationShow: false,
+  //       zIndexBio: 1500,
+  //       zIndexTechnology: 1300,
+  //       zIndexEducation: 1300,
+  //       error: "",
+  //     });
+  //   }
+  // }
 
   render (){
     

@@ -1,7 +1,27 @@
-import { Box, TextField, Typography } from '@mui/material'
-import React from 'react'
+import { Box, TextField, Typography, Button } from '@mui/material'
+import emailjs from 'emailjs-com'
+import React, {useRef} from 'react'
+
 
 export default function ContactMeDisplay() {
+  const form = useRef();
+
+  const sendEmail =(evt) => {
+    console.log("Inside SendEmail")
+    console.log(form.current)
+    // emailjs.preventDefault();
+
+    emailjs.sendForm(
+      process.env.SERVICE_ID,
+      process.env.TEMPLATE_ID,
+      form.current,
+      process.env.USER_ID
+    ).then(
+      result => console.log(result.text),
+      error => console.log(error.text)
+    )
+  } 
+
   return (
     <Box
     sx={{
@@ -17,6 +37,8 @@ export default function ContactMeDisplay() {
       <Typography variant='h3'>I'd love to hear from you</Typography>
       <Box
         component="form"
+        ref={form}
+        onSubmit={sendEmail}
         sx={{
           mx:'5vw',
           my:'2vw',
@@ -29,6 +51,7 @@ export default function ContactMeDisplay() {
       <Typography align="left" variant='h4'>Name</Typography>
       <TextField
         required
+        name="user_name"
         id="outlined-required"
         label="Required"
         defaultValue=""
@@ -36,6 +59,7 @@ export default function ContactMeDisplay() {
       <Typography align="left" variant='h4'>Email</Typography>
       <TextField
         required
+        name="user_email"
         id="outlined-required"
         label="Required"
         defaultValue=""
@@ -43,12 +67,14 @@ export default function ContactMeDisplay() {
       <Typography align="left" variant='h4'>Message</Typography>
       <TextField
         required
+        name="message"
         id="outlined-required"
         label="Required"
         defaultValue=""
         multiline
         rows={8}
       />
+      <Button type="submit" value="Send">  Send </Button>
       </Box>
         
     </Box>
