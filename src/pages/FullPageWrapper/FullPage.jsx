@@ -14,7 +14,8 @@ export const Fullpage = () => (
     licenseKey = {'YOUR_KEY_HERE'}
     anchors = {["landingPage", "projectPage", "aboutMePage", "linksPage"]}
     scrollingSpeed = {1000} /* Options here */
-    sectionsColor={['#CBDFDD', '#B4E2DF', '#8DB28F ', '#A9B7D5']}
+    // sectionsColor={['#CBDFDD', '#B4E2DF', '#8DB28F ', '#A9B7D5']}
+    sectionsColor={['primary.main', 'primary.light', '#8DB28F ', '#A9B7D5']}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>

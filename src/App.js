@@ -1,16 +1,27 @@
 import './App.css';
 import React from "react";
 import { Fullpage } from './pages/FullPageWrapper/FullPage';
-import { CssBaseline, Box} from '@mui/material';
+import { CssBaseline, Box, createTheme, ThemeProvider} from '@mui/material';
 import NavBar from './components/NavBar/NavBar';
+
+const theme = createTheme({
+  palette:{
+    primary:{
+      light: '#FFFFFF',
+      main: '#D3D3D3',
+    }
+  },
+})
 
 function App() {
   return (
-    <Box className="App">
-      <CssBaseline/>
-      <NavBar/>
-      <Fullpage />
-    </Box>
+    <ThemeProvider theme={theme}>
+      <Box className="`App">
+        <CssBaseline/>
+        <NavBar/>
+        <Fullpage />
+      </Box>
+    </ThemeProvider>
   );
 }
 
