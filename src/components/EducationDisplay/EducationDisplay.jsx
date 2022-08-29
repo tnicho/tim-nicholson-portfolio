@@ -1,9 +1,9 @@
 import React from 'react'
 import { Paper, Typography, Box} from '@mui/material'
 
-export default function EducationDisplay() {
+export default function EducationDisplay(props) {
   return (
-    <Paper elevation = {20} sx={{margin:'10px', width: '40vw', height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
+    <Paper elevation = {props.elevation} sx={{margin:'10px', width: '40vw', height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
       <Typography variant='h3'>EDUCATION</Typography>
       <Box sx={{display:'flex'}}>
         <img margin ='5px' height="100px" src="./Western Logo.jpg"/>

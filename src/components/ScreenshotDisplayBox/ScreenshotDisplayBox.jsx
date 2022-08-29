@@ -11,7 +11,7 @@ export default function ProjectDisplay(props){
           ml: 20,
           mr: 10,
           my: 5,
-          background: "red",
+          // background: "red",
           height: 360,
           width: 640
         }}

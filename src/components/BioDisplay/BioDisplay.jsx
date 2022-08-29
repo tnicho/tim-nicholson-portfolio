@@ -4,7 +4,7 @@ import {Paper, Typography} from "@mui/material"
 export default function BioDisplay(props) {
   return (
     <Paper 
-      elevation = {20}
+      elevation = {props.elevation}
       sx={{
         margin:'10px', 
         width: '40vw', 

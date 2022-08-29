@@ -17,7 +17,6 @@ export default function LinkDisplay() {
             mx:'3vw',
             my:'1vw',
             '&:hover': {
-              backgroundColor: 'primary.main',
               opacity: [0.9, 0.8, 0.7],
               cursor: 'pointer',
             },
@@ -35,7 +34,6 @@ export default function LinkDisplay() {
             mx:'3vw',
             my:'1vw',
             '&:hover': {
-              backgroundColor: 'primary.main',
               opacity: [0.9, 0.8, 0.7],
               cursor: 'pointer', 
             },
@@ -66,7 +64,6 @@ export default function LinkDisplay() {
           height:"400px",
           width:"310px",
           '&:hover': {
-            backgroundColor: 'primary.main',
             opacity: [0.9, 0.8, 0.7],
             cursor: 'pointer'
           },

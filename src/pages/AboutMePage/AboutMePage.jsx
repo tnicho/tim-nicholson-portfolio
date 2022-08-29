@@ -10,65 +10,70 @@ export default class AboutMePage extends Component{
     bioShow: true,
     technologyShow: false,
     educationShow: false,
-    zIndexBio: 'tooltip',
-    zIndexTechnology: 'modal',
-    zIndexEducation: 'modal',
+    elevation: 20,
   }
 
   finishAboutChange =() =>{
-    console.log('inside About Change')
-    console.log(this.state.showWaiting)
     if (this.state.showWaiting === 'education'){
-      console.log('edu')
       this.setState({
         bioShow: false,
         technologyShow: false,
         educationShow: true,
-        zIndexBio: 'modal',
-        zIndexTechnology: 'modal',
-        zIndexEducation: 'tooltip',
         error: "",
       });
     }else if (this.state.showWaiting === 'technology'){
-      console.log('tech')
       this.setState({
         bioShow: false,
         technologyShow: true,
         educationShow: false,
-        zIndexBio: 1300,
-        zIndexTechnology: 1500,
-        zIndexEducation: 1300,
         error: "",
       });
 
     }else if (this.state.showWaiting === 'biography'){
-      console.log('bio')
       this.setState({
         bioShow: true,
         technologyShow: false,
         educationShow: false,
-        zIndexBio: 1500,
-        zIndexTechnology: 1300,
-        zIndexEducation: 1300,
         error: "",
       });
     }
-
   }
 
-  handleAboutChange = (evt) => {
+  startAboutChange=()=>{
     this.setState({
       bioShow: false,
       technologyShow: false,
       educationShow: false,
-      showWaiting: evt.target.id,
-      zIndexBio: 1300,
-      zIndexTechnology: 1500,
-      zIndexEducation: 1300,
       error: "",
     });
-    setTimeout(() =>this.finishAboutChange(), 1100)
+  }
 
+  DeelevateChange =() =>{
+    for (let i=this.state.elevation; i > 0; i--){
+      this.setState({
+        elevation: parseInt(i),
+        
+      })
+    }
+  }
+  ElevateChange =() =>{
+    for (let i=this.state.elevation; i < 21; i++){
+      this.setState({
+        elevation: parseInt(i),
+      })
+      console.log(i)
+    }
+  }
+
+  handleAboutChange = (evt) => {
+    this.setState({
+      showWaiting: evt.target.id,
+      error: "",
+    });
+   this.DeelevateChange()
+    setTimeout(() =>this.startAboutChange(), 500)
+    setTimeout(() =>this.finishAboutChange(), 1600)
+    setTimeout(() =>this.ElevateChange(), 2700)
   }
 
 
@@ -145,9 +150,8 @@ export default class AboutMePage extends Component{
                 bioShow = {this.state.bioShow} 
                 technologyShow = {this.state.technologyShow} 
                 educationShow = {this.state.educationShow}
-                zIndexBio = {this.state.zIndexBio}
-                zIndexTechnology = {this.state.zIndexTechnology}
-                zIndexEducation = {this.state.zIndexEducation}/>
+                elevation ={this.state.elevation}
+              />
           </Box>
         </Box>
       </Box>

@@ -14,21 +14,21 @@ export default function AboutMeDisplay(props) {
       ml: '10vw'
     }}
     >
-        <Fade direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 1000, exit: 1000}}>
-          <Box >
-            <BioDisplay/>
+        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 1000, exit: 1000}}>
+          <Box>
+            <BioDisplay elevation={props.elevation}/>
           </Box>
-        </Fade>
-        <Fade direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={{ enter: 1000, exit: 1000}}>
+        </Slide>
+        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.technologyShow} timeout={{ enter: 1000, exit: 1000}}>
         <Box >
-          <SkillsDisplay/>
+          <SkillsDisplay elevation={props.elevation}/>
         </Box>
-        </Fade>
-        <Fade direction="up" appear={true} mountOnEnter unmountOnExit in={props.educationShow} timeout={{ enter: 1000, exit: 1000}}>
+        </Slide>
+        <Slide direction="up" appear={true} mountOnEnter unmountOnExit in={props.educationShow} timeout={{ enter: 1000, exit: 1000}}>
         <Box >
-          <EducationDisplay/>
+          <EducationDisplay elevation={props.elevation}/>
         </Box>
-        </Fade> 
+        </Slide> 
     </Box>
   )
 }

@@ -1,5 +1,5 @@
 import { Box, TextField, Typography, Button } from '@mui/material'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import React, {useRef} from 'react'
 
 
@@ -7,15 +7,13 @@ export default function ContactMeDisplay() {
   const form = useRef();
 
   const sendEmail =(evt) => {
-    console.log("Inside SendEmail")
-    console.log(form.current)
     // emailjs.preventDefault();
 
     emailjs.sendForm(
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE_ID,
+      'service_twzhn1a',
+      'template_o5i8bia',
       form.current,
-      process.env.USER_ID
+      '_GBA7qCIPMyN137VT'
     ).then(
       result => console.log(result.text),
       error => console.log(error.text)
@@ -28,8 +26,6 @@ export default function ContactMeDisplay() {
       mx: "5vw",
       my: '5vh',
       py: '5vh',
-      // mt: '10vh',
-      // mb: "5vh",
       width: "50vw",
       bgcolor: 'inherit'
     }}
@@ -43,7 +39,6 @@ export default function ContactMeDisplay() {
           mx:'5vw',
           my:'2vw',
           '& .MuiTextField-root': { m: 1, width: '50ch' },
-          bgcolor: 'pink'
         }}
         noValidate
         autoComplete="off"

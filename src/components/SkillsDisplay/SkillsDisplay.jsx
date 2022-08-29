@@ -1,10 +1,10 @@
 import { Paper, Typography, Box } from '@mui/material'
 import React from 'react'
 
-export default function SkillsDisplay() {
+export default function SkillsDisplay(props) {
   return (
     <Paper 
-      elevation = {20}
+      elevation = {props.elevation}
       sx={{
         margin:'10px', 
         width: '40vw', 

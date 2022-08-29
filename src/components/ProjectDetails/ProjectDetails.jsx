@@ -13,7 +13,12 @@ export default function ProjectDetails(props) {
       width: "20vw"
     }}
     >
-      <Typography sx={{color: "white", fontWeight:'bold', letterSpacing: 3}} variant="h4">{props.title}</Typography>
+      <Typography sx={{
+        color: "white", 
+        fontWeight:'bold', 
+        letterSpacing: 3
+        }} 
+        variant="h4">{props.title}</Typography>
       <Box
         sx={{
           background: "#ADD8E6",
