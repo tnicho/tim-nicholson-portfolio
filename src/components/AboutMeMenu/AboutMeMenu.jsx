@@ -10,6 +10,7 @@ export default function AboutMeMenu(props) {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        color: 'primary.main',
         backgroundColor: 'inherit',
       }}
     >

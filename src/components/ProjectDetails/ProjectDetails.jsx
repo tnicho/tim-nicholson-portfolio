@@ -8,20 +8,20 @@ export default function ProjectDetails(props) {
     sx={{
       mr: 20,
       my: 5,
-      background: "blue",
+      bgcolor: 'primary.main',
       height: 360,
       width: "20vw"
     }}
     >
       <Typography sx={{
-        color: "white", 
+        color: "secondary.light", 
         fontWeight:'bold', 
         letterSpacing: 3
         }} 
         variant="h4">{props.title}</Typography>
       <Box
         sx={{
-          background: "#ADD8E6",
+          bgcolor: "primary.light",
           borderBottom: 1,
           height:'26vh',
         }}>
@@ -30,8 +30,8 @@ export default function ProjectDetails(props) {
       </Box>
       <Box
         sx={{
-            background: "#00008B",
-            color: "white",
+            bgcolor: 'primary.main',
+            color: "secondary.light",
             borderBottom: 1,
             height:'10vh'
           }}>
@@ -40,13 +40,13 @@ export default function ProjectDetails(props) {
       </Box>
       <Box
         sx={{
-            background: "#ADD8E6",
+            background: "primary.light",
             pb: 1
           }}>
             <Typography>Links</Typography>
             <Box
               sx={{
-                  background: "#ADD8E6",
+                  background: "primary.main",
                   display: "flex",
                   justifyContent: 'space-around',
                 }}>
