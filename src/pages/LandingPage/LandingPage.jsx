@@ -31,7 +31,7 @@ export default class LandingPage extends Component {
     return (
       <Box
         sx={{
-          mt: "60px",
+          mt: "40px",
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -40,7 +40,7 @@ export default class LandingPage extends Component {
       >
         <Box
         sx={{
-          my: '10vh',
+          my: '5vh',
           backgroundColor: this.state.logoBackgroundColour,
           '&:hover': {
             cursor: 'pointer'

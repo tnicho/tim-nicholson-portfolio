@@ -3,18 +3,29 @@ import React from 'react'
 import { useReward } from "react-rewards";
 
 export default function WelcomeButton() {
-    const { reward, isAnimating } = useReward('rewardId', 'confetti');
+    const {reward: confettiLeft, isAnimating: isConfettiLeftAnimating } = useReward('rewardLeft', 'confetti', {angle:'105'});
+    const {reward: confettiRight, isAnimating: isConfettiRightAnimating} = useReward('rewardRight', 'confetti',{angle:"75"});
+
   return (
    <Box
-   onClick={reward}
+   disable={isConfettiLeftAnimating || isConfettiRightAnimating}
+   onClick={() => {
+    if(!(isConfettiLeftAnimating || isConfettiRightAnimating)){
+      confettiLeft();
+      confettiRight();
+    }
+}}
    sx={{
+    display: 'flex',
+    justifyContent:'space-evenly',
     '&:hover': {
       cursor: 'pointer'
     },
   }}
    >
-    <span id="rewardId" />
+    <span id="rewardLeft" config={{angle:'60'}} sx={{width: '5px', height: '6px', bgColor: 'red'}} />
     <Typography variant='h2'>WELCOME TO MY PORTFOLIO</Typography>
+    <span id="rewardRight" angle='45'/>
     </Box>
   )
 }
