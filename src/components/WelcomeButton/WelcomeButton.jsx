@@ -23,9 +23,9 @@ export default function WelcomeButton() {
     },
   }}
    >
-    <span id="rewardLeft" config={{angle:'60'}} sx={{width: '5px', height: '6px', bgColor: 'red'}} />
+    <span id="rewardLeft"/>
     <Typography variant='h2'>WELCOME TO MY PORTFOLIO</Typography>
-    <span id="rewardRight" angle='45'/>
+    <span id="rewardRight"/>
     </Box>
   )
 }

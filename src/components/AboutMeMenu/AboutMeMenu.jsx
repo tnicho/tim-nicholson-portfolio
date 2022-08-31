@@ -21,10 +21,11 @@ export default function AboutMeMenu(props) {
           width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
-          typography: 'h4',
+          fontWeight: 'bolder',
+          fontSize: 60,
           '&:hover': {
             opacity: [0.9, 0.8, 0.7],
-            typography: 'h2',
+            fontSize: 90,
             cursor: 'pointer'
           },
       }}
@@ -40,10 +41,11 @@ export default function AboutMeMenu(props) {
           width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
-          typography: 'h4',
+          fontWeight: 'bolder',
+          fontSize: 60,
           '&:hover': {
             opacity: [0.9, 0.8, 0.7],
-            typography: 'h2',
+            fontSize: 90,
             cursor: 'pointer'
           },
       }}
@@ -59,10 +61,11 @@ export default function AboutMeMenu(props) {
           width:'30vw',
           alignItems: 'center',
           justifyContent: 'center',
-          typography: 'h4',
+          fontWeight: 'bolder',
+          fontSize: 60,
           '&:hover': {
             opacity: [0.9, 0.8, 0.7],
-            typography: 'h2',
+            fontSize: 90,
             cursor: 'pointer'
           },
       }}

@@ -15,7 +15,7 @@ export const Fullpage = () => (
     anchors = {["landingPage", "projectPage", "aboutMePage", "linksPage"]}
     scrollingSpeed = {1000} /* Options here */
     // sectionsColor={['#CBDFDD', '#B4E2DF', '#8DB28F ', '#A9B7D5']}
-    sectionsColor={['#FFFFFF', '#D3D3D3', 'secondary.light ', 'secondary.main']}
+    sectionsColor={['#D3D3D3', '#cae6c0', '#D3D3D3', '#cae6c0']}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
