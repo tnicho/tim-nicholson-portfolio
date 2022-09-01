@@ -5,3 +5,9 @@ I made this portfolio site to exibit my work and to play around with components 
 Technology Used:
 
 React, MUI, Emailjs, Fullpage.js, react-rewards, slick (slick-carousel), randomColor
+
+Next Steps:
+
+Fix bugs in Mozilla,
+Fix bugs on mobile,
+Make more projects!
