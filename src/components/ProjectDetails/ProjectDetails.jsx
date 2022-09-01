@@ -7,25 +7,26 @@ export default function ProjectDetails(props) {
     elevation={20}
     sx={{
       mr: 20,
-      my: 5,
-      bgcolor: 'primary.main',
-      height: 360,
-      width: "20vw"
+      mt:'20px',
+      height: '45vh',
+      width: "23vw",
     }}
     >
       <Typography sx={{
+        bgcolor: 'primary.main',
         color: "secondary.light", 
         fontWeight:'bold', 
-        letterSpacing: 3
+        letterSpacing: 2
         }} 
+        align= 'center'
         variant="h4">{props.title}</Typography>
       <Box
         sx={{
           bgcolor: "secondary.light",
           borderBottom: 1,
-          height:'26vh',
+          height:'22vh',
         }}>
-          <Typography sx={{fontWeight:'bold'}}>Description</Typography>
+          <Typography align= 'center' sx={{fontWeight:'bold'}}>Description</Typography>
           <Typography align='left' sx={{px:1}}>{props.description}</Typography>
       </Box>
       <Box
@@ -33,10 +34,10 @@ export default function ProjectDetails(props) {
             bgcolor: 'primary.main',
             color: "secondary.light",
             borderBottom: 1,
-            height:'10vh'
+            height:'12vh'
           }}>
-            <Typography>Technology Used</Typography>
-            <Typography> {props.tech}</Typography>
+            <Typography align= 'center' sx={{fontWeight:'bold'}}>Technology Used</Typography>
+            <Typography align='left' sx={{p:1}}> {props.tech}</Typography>
       </Box>
       <Box
         sx={{
@@ -44,14 +45,14 @@ export default function ProjectDetails(props) {
             background: "secondary.main",
             pb: 1
           }}>
-            <Typography>Links</Typography>
+            <Typography align= 'center' sx={{fontWeight:'bold'}}>Links</Typography>
             <Box
               sx={{
                   background: "secondary.main",
                   display: "flex",
                   justifyContent: 'space-around',
                 }}>
-            <Link href={props.linkDeployed}>Deployed App</Link> <Link href={props.linkGithub}>Github</Link>
+            <Link sx={{fontWeight: 'bold'}} href={props.linkDeployed}>Deployed App</Link> <Link sx={{fontWeight: 'bold', pr: 3}} href={props.linkGithub}>Github</Link>
             </Box>
       </Box>
     </Paper>

@@ -16,6 +16,7 @@ export default function WelcomeButton() {
     }
 }}
    sx={{
+    my: '2vh',
     display: 'flex',
     justifyContent:'space-evenly',
     '&:hover': {
@@ -24,7 +25,7 @@ export default function WelcomeButton() {
   }}
    >
     <span id="rewardLeft"/>
-    <Typography variant='h2'>WELCOME TO MY PORTFOLIO</Typography>
+    <Typography sx={{fontWeight: 'bolder'}} variant='h2' color='primary.main'>WELCOME TO MY PORTFOLIO</Typography>
     <span id="rewardRight"/>
     </Box>
   )

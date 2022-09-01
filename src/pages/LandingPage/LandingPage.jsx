@@ -1,5 +1,7 @@
 import React, {Component} from "react"
-import {Box, Typography} from "@mui/material"
+import {Box, Typography, Icon} from "@mui/material"
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import randomColor from "randomcolor"
 import {ReactComponent as TimLogo} from '../../1.svg';
 // import {ReactElement as TimLogo} from '../../1.svg';
@@ -51,8 +53,11 @@ export default class LandingPage extends Component {
         
           onClick= {this.handleLogoChange}
         >
-          <TimLogo  fill={this.state.logoFillColour} stroke={this.state.logoStrokeColour}/>
+          <TimLogo style={{height: '60vh', width: '70vh'}} fill={this.state.logoFillColour} stroke={this.state.logoStrokeColour}/>
         </Box>
+        <ArrowUpwardIcon/>
+        <Typography>Click These</Typography>
+        <ArrowDownwardIcon/>
         <WelcomeButton/>
       </Box>
     )
