@@ -21,7 +21,7 @@ export default function ProjectDetails(props) {
         variant="h4">{props.title}</Typography>
       <Box
         sx={{
-          bgcolor: "primary.light",
+          bgcolor: "secondary.light",
           borderBottom: 1,
           height:'26vh',
         }}>
@@ -40,13 +40,14 @@ export default function ProjectDetails(props) {
       </Box>
       <Box
         sx={{
-            background: "primary.light",
+            
+            background: "secondary.main",
             pb: 1
           }}>
             <Typography>Links</Typography>
             <Box
               sx={{
-                  background: "primary.main",
+                  background: "secondary.main",
                   display: "flex",
                   justifyContent: 'space-around',
                 }}>

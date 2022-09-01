@@ -4,10 +4,15 @@ import { Paper, Typography, Box} from '@mui/material'
 export default function EducationDisplay(props) {
   return (
     <Paper elevation = {props.elevation} sx={{margin:'10px', width: '40vw', height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
-      <Typography variant='h3'>EDUCATION</Typography>
-      <Box sx={{display:'flex'}}>
-        <img margin ='5px' height="100px" src="./Western Logo.jpg"/>
-        <Box my={3}>
+      <Typography align='center' variant='h3'>EDUCATION</Typography>
+      <Box 
+        sx={{display:'flex'}}
+        mt={3}
+        >
+          <Box mt={1}>
+            <img height="100px" src="./Western Logo.jpg"/>
+          </Box>
+        <Box >
           <Box sx={{
             display:'flex',
             justifyContent:'space-between',

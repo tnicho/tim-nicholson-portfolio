@@ -1,19 +1,22 @@
 import React from 'react'
-import { Box } from '@mui/material'
+import { Paper } from '@mui/material'
 import LinkDisplay from "../../components/LinksDisplay/LinksDisplay"
 
 export default function ResumeDisplay() {
   return (
-    <Box
+    <Paper
       sx={{
+        display:'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
         mx: "5vw",
-        mt: '10vh',
-        mb: "5vh",
+        my: '7vh',
+        py: '2vh',
         width: "50vw",
-        bgcolor: 'inherit'
+        bgcolor: 'primary.main',
       }}
     >
         <LinkDisplay/>
-    </Box>
+    </Paper>
   )
 }

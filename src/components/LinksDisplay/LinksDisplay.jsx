@@ -1,11 +1,17 @@
 import React from 'react'
 import {Box, Typography} from "@mui/material"
+import {ReactComponent as LinkedInLogo} from '../../LinkedIn.svg';
+import {ReactComponent as GitHubLogo} from '../../GitHub.svg';
 
 
 export default function LinkDisplay() {
   return (
-    <Box>
-      <Typography>For more information on my please find me here.</Typography>
+    <Box
+    sx={{
+      color: 'secondary.light'
+    }}
+    >
+      <Typography align='center' variant='h4'>For more information on my please find me here.</Typography>
       <Box 
         sx={{
           display:"flex",
@@ -26,7 +32,7 @@ export default function LinkDisplay() {
             window.open("https://github.com/tnicho")
           }}
         >
-          <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
           <Typography>Github</Typography>
         </Box>
         <Box
@@ -43,7 +49,7 @@ export default function LinkDisplay() {
             window.open("https://www.linkedin.com/in/timothyrinicholson/")
           }}
         >
-          <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+          <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
           <Typography>LinkedIn</Typography>
         </Box>
       </Box>

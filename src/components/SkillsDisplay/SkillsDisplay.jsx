@@ -12,11 +12,12 @@ export default function SkillsDisplay(props) {
         display: 'flex', 
         flexDirection:'column', 
         justifyContent:'space-evenly',
+        alignItems: 'center',
         zIndex: 'modal'}}
       >
       <Typography variant='h3'>TECHNOLOGIES</Typography>
         <Box>
-          <Typography variant="h5">Front End:</Typography>
+          <Typography align='center' variant="h5">Front End:</Typography>
           <Box
             sx={{display: 'flex', justifyContent: 'space-evenly', width:'40vw'}}>
             <img height='75px' width='75px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
@@ -26,7 +27,7 @@ export default function SkillsDisplay(props) {
           </Box>
         </Box>
         <Box>
-          <Typography variant="h5">Back End:</Typography>
+          <Typography align='center' variant="h5">Back End:</Typography>
           <Box
           sx={{display: 'flex', justifyContent: 'space-evenly', width:'40vw'}}>
             <img height='75px' width='75px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
@@ -35,7 +36,7 @@ export default function SkillsDisplay(props) {
           </Box>
         </Box>
         <Box>
-          <Typography variant="h5">Frameworks:</Typography>
+          <Typography align='center' variant="h5">Frameworks:</Typography>
           <Box
           sx={{display: 'flex', justifyContent: 'space-evenly', width:'40vw'}}>
             <img height='75px' width='75px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"/>
@@ -45,7 +46,7 @@ export default function SkillsDisplay(props) {
           </Box>
         </Box>
         <Box>
-          <Typography variant="h5">Technologies:</Typography>
+          <Typography align='center' variant="h5">Technologies:</Typography>
           <Box
           sx={{display: 'flex', justifyContent: 'space-evenly', width:'40vw'}}>
             <img height='75px' width='75px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" />

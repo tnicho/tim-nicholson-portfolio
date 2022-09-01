@@ -1,6 +1,7 @@
-import { Box, TextField, Typography, Button } from '@mui/material'
+import { Box, TextField, Typography, Button, Paper } from '@mui/material'
 import emailjs from '@emailjs/browser'
 import React, {useRef} from 'react'
+import SendIcon from '@mui/icons-material/Send';
 
 
 export default function ContactMeDisplay() {
@@ -21,16 +22,20 @@ export default function ContactMeDisplay() {
   } 
 
   return (
-    <Box
+    <Paper
     sx={{
+      display:'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
       mx: "5vw",
-      my: '5vh',
-      py: '5vh',
+      my: '7vh',
+      py: '2vh',
       width: "50vw",
-      bgcolor: 'inherit'
+      bgcolor: 'primary.main',
+      color: 'secondary.light'
     }}
     >
-      <Typography variant='h3'>I'd love to hear from you</Typography>
+      <Typography align='center' variant='h4'>I want to hear from you</Typography>
       <Box
         component="form"
         ref={form}
@@ -38,18 +43,21 @@ export default function ContactMeDisplay() {
         sx={{
           mx:'5vw',
           my:'2vw',
-          '& .MuiTextField-root': { m: 1, width: '50ch' },
+          '& .MuiTextField-root': { m: 1, width: '50ch', background: '#FFFFFF'},
+          '& .MuiButton-root':{ textPrimary:{color: 'primary.main'}}
         }}
         noValidate
         autoComplete="off"
       >
       <Typography align="left" variant='h4'>Name</Typography>
       <TextField
+        sx={{  }}
         required
         name="user_name"
         id="outlined-required"
         label="Required"
         defaultValue=""
+        variant="filled"
         />
       <Typography align="left" variant='h4'>Email</Typography>
       <TextField
@@ -58,6 +66,7 @@ export default function ContactMeDisplay() {
         id="outlined-required"
         label="Required"
         defaultValue=""
+        variant="filled"
         />
       <Typography align="left" variant='h4'>Message</Typography>
       <TextField
@@ -66,12 +75,15 @@ export default function ContactMeDisplay() {
         id="outlined-required"
         label="Required"
         defaultValue=""
+        variant="filled"
         multiline
         rows={8}
       />
-      <Button type="submit" value="Send">  Send </Button>
+      <Box sx={{display:'flex', justifyContent:'flex-end'}} >
+      <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}} align='right' variant ="contained" size="large" type="submit" value="Send" endIcon={<SendIcon />}>Send</Button>
+      </Box>
       </Box>
         
-    </Box>
+    </Paper>
   )
 }
