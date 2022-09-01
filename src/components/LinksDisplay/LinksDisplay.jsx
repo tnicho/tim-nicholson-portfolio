@@ -1,8 +1,5 @@
 import React from 'react'
 import {Box, Typography} from "@mui/material"
-import {ReactComponent as LinkedInLogo} from '../../LinkedIn.svg';
-import {ReactComponent as GitHubLogo} from '../../GitHub.svg';
-
 
 export default function LinkDisplay() {
   return (

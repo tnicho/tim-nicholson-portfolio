@@ -11,10 +11,10 @@ export default function ContactMeDisplay() {
     // emailjs.preventDefault();
 
     emailjs.sendForm(
-      'service_twzhn1a',
-      'template_o5i8bia',
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
       form.current,
-      '_GBA7qCIPMyN137VT'
+      process.env.REACT_APP_PUBLIC_KEY
     ).then(
       result => console.log(result.text),
       error => console.log(error.text)

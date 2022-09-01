@@ -3,7 +3,6 @@ import React from "react";
 import { Fullpage } from './pages/FullPageWrapper/FullPage';
 import { CssBaseline, Box, createTheme, ThemeProvider} from '@mui/material';
 import NavBar from './components/NavBar/NavBar';
-
 const theme = createTheme({
   palette:{
     primary:{
