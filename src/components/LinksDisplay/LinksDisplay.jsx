@@ -8,7 +8,7 @@ export default function LinkDisplay() {
       color: 'secondary.light'
     }}
     >
-      <Typography align='center' variant='h5'>For more information on my please find me here.</Typography>
+      <Typography align='center' variant='h4'>For more information on my please find me here.</Typography>
       <Box 
         sx={{
           display:"flex",
@@ -61,7 +61,7 @@ export default function LinkDisplay() {
           alignItems:'center'
         }}      
       >
-        <Typography sx={{mb:1}}>Or download my resume directly by clicking below</Typography>
+        <Typography varient='h5' sx={{mb:1}}>Or download my resume directly by clicking below</Typography>
         <Box
           sx={{
           // height:"400px",
