@@ -6,8 +6,8 @@ export default function BioDisplay(props) {
     <Paper 
       elevation = {props.elevation}
       sx={{
-        margin:'10px', 
-        pt: '10vh',
+        margin:'10px',
+        mt: '10vh', 
         width: '40vw', 
         height: '60vh', 
         display: 'flex', 
