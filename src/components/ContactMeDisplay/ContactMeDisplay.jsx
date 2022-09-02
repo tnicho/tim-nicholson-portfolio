@@ -49,9 +49,8 @@ export default function ContactMeDisplay() {
         noValidate
         autoComplete="off"
       >
-      <Typography align="left" variant='h4'>Name</Typography>
+      <Typography align="left" variant='h5'>Name</Typography>
       <TextField
-        sx={{  }}
         required
         name="user_name"
         id="outlined-required"
@@ -59,7 +58,7 @@ export default function ContactMeDisplay() {
         defaultValue=""
         variant="filled"
         />
-      <Typography align="left" variant='h4'>Email</Typography>
+      <Typography align="left" variant='h5'>Email</Typography>
       <TextField
         required
         name="user_email"
@@ -68,7 +67,7 @@ export default function ContactMeDisplay() {
         defaultValue=""
         variant="filled"
         />
-      <Typography align="left" variant='h4'>Message</Typography>
+      <Typography align="left" variant='h5'>Message</Typography>
       <TextField
         required
         name="message"
