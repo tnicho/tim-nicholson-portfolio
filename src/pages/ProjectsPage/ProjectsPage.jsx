@@ -35,8 +35,8 @@ export default class ProjectsPage extends Component{
       tech: "Express, Node.js, MongoDB, HTML, CSS, Javascript, OAuth, Google Books API, TMDB API, Heroku",
       linkDeployed: "https://myyearinmedia.herokuapp.com/",
       linkGithub: "https://github.com/tnicho/myyearofmedia",
-      screenshots: ["./PortfolioPics/Screenshots/MYIM books.png",
-      "./PortfolioPics/Screenshots/MYIM movies.png",]
+      screenshots: ["./PortfolioPics/Screenshots/MYIM Books.png",
+      "./PortfolioPics/Screenshots/MYIM Movies.png",]
     }
     const digipetsForever ={
       title: "DIGIPETS FOREVER",
