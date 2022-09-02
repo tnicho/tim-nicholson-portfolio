@@ -6,7 +6,7 @@ export default function ProjectDetails(props) {
     <Paper 
     elevation={20}
     sx={{
-      mr: 20,
+      mr: 15,
       mt:'20px',
       height: '50vh',
       width: "40vw",
