@@ -11,10 +11,10 @@ export default function ContactMeDisplay() {
     // emailjs.preventDefault();
 
     emailjs.sendForm(
-      service_twzhn1a,
-      template_o5i8bia,
+      'service_twzhn1a',
+      'template_o5i8bia',
       form.current,
-      _GBA7qCIPMyN137VT
+      '_GBA7qCIPMyN137VT'
     ).then(
       result => console.log(result.text),
       error => console.log(error.text)
