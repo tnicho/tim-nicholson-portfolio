@@ -10,8 +10,6 @@ export default function ProjectDisplay(props){
       sx={{
           ml: 20,
           mr: 10,
-          my: 5,
-          // background: "red",
           height: 360,
           width: 640
         }}
