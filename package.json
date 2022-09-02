@@ -2,7 +2,7 @@
   "name": "tim-nicholson-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://tnicho.github.io/tim-nicholson-portfolio",
+  "homepage":"https://tnicho.github.io/tim-nicholson-portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.3",
