@@ -7,6 +7,7 @@ export default function BioDisplay(props) {
       elevation = {props.elevation}
       sx={{
         margin:'10px', 
+        pt: '5vh',
         width: '40vw', 
         height: '60vh', 
         display: 'flex', 
