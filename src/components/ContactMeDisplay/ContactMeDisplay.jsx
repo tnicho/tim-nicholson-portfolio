@@ -35,7 +35,7 @@ export default function ContactMeDisplay() {
       color: 'secondary.light'
     }}
     >
-      <Typography align='center' variant='h4'>I want to hear from you</Typography>
+      <Typography align='center' variant='h5'>I want to hear from you</Typography>
       <Box
         component="form"
         ref={form}

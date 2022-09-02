@@ -8,7 +8,7 @@ export default function LinkDisplay() {
       color: 'secondary.light'
     }}
     >
-      <Typography align='center' variant='h4'>For more information on my please find me here.</Typography>
+      <Typography align='center' variant='h5'>For more information on my please find me here.</Typography>
       <Box 
         sx={{
           display:"flex",
@@ -75,7 +75,7 @@ export default function LinkDisplay() {
         }}
         >
           <a href = './Timothy Nicholson Resume.pdf' download="Timothy Nicholson Resume">
-            <img height = "400px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
+            <img height = "300px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
           </a>
         </Box>
       </Box>
