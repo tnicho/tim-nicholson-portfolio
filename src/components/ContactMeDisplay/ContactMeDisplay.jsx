@@ -76,7 +76,7 @@ export default function ContactMeDisplay() {
         defaultValue=""
         variant="filled"
         multiline
-        rows={8}
+        rows={6}
       />
       <Box sx={{display:'flex', justifyContent:'flex-end'}} >
       <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}} align='right' variant ="contained" size="large" type="submit" value="Send" endIcon={<SendIcon />}>Send</Button>
