@@ -14,7 +14,7 @@ export default function ProjectSelectionCard (props){
           image={props.imagesrc}
         />
         <CardContent id={props.title}>
-          <Typography id={props.title} variant="subtitle1" component="div">{props.title}</Typography>
+          <Typography id={props.title} variant="subtitle2" component="div">{props.title}</Typography>
           <Typography id={props.title} variant="body2" color="text.secondary">{props.description}</Typography>
         </CardContent>
       </CardActionArea>
