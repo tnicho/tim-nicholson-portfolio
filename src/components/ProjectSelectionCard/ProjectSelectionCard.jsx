@@ -3,7 +3,7 @@ import {Box, Button, Card, CardMedia, CardContent, CardActions,  CardActionArea,
 
 export default function ProjectSelectionCard (props){
   return(
-    <Card elevation={10} sx={{width:160}} >
+    <Card elevation={10} sx={{width:16}} >
       <CardActionArea
         onClick = {props.handleProjectSelection}
       >
@@ -14,7 +14,7 @@ export default function ProjectSelectionCard (props){
           image={props.imagesrc}
         />
         <CardContent id={props.title}>
-          <Typography id={props.title} variant="button" component="div" sx={{fontWeight: 'bold'}}>{props.title}</Typography>
+          <Typography id={props.title} variant="subtitle1" component="div" sx={{fontWeight: 'bold'}}>{props.title}</Typography>
           <Typography id={props.title} variant="body2" color="text.secondary">{props.description}</Typography>
         </CardContent>
       </CardActionArea>
