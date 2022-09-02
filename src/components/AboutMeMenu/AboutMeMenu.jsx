@@ -5,7 +5,7 @@ export default function AboutMeMenu(props) {
   return (
     <Box
       sx={{
-        mt: 20,
+        mt: 10,
         height:'100%',
         display: 'flex',
         flexDirection: 'column',
@@ -63,10 +63,10 @@ export default function AboutMeMenu(props) {
           alignItems: 'center',
           justifyContent: 'center',
           fontWeight: 'bolder',
-          fontSize: 60,
+          fontSize: 50,
           '&:hover': {
             opacity: [0.9, 0.8, 0.7],
-            fontSize: 90,
+            fontSize: 80,
             cursor: 'pointer'
           },
       }}
