@@ -49,7 +49,7 @@ export default function ContactMeDisplay() {
         noValidate
         autoComplete="off"
       >
-      <Typography align="left" variant='h5'>Name</Typography>
+      <Typography align="left" variant='h6'>Name</Typography>
       <TextField
         required
         name="user_name"
@@ -58,7 +58,7 @@ export default function ContactMeDisplay() {
         defaultValue=""
         variant="filled"
         />
-      <Typography align="left" variant='h5'>Email</Typography>
+      <Typography align="left" variant='h6'>Email</Typography>
       <TextField
         required
         name="user_email"
@@ -67,7 +67,7 @@ export default function ContactMeDisplay() {
         defaultValue=""
         variant="filled"
         />
-      <Typography align="left" variant='h5'>Message</Typography>
+      <Typography align="left" variant='h6'>Message</Typography>
       <TextField
         required
         name="message"
