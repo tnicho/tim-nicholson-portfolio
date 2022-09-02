@@ -61,13 +61,13 @@ export default function LinkDisplay() {
           alignItems:'center'
         }}      
       >
-        <Typography variant='h5' sx={{mb:1}}>Or download my resume directly by clicking below</Typography>
+        <Typography variant='h5' sx={{mb:1}}>Or download my resume by clicking below</Typography>
         <Box
           sx={{
           // height:"400px",
           // width:"310px",
-          height:"200px",
-          width:"155px",
+          height:"250px",
+          width:"194px",
           '&:hover': {
             opacity: [0.9, 0.8, 0.7],
             cursor: 'pointer'
