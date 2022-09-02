@@ -7,7 +7,7 @@ export default function ProjectSelection(props) {
       <Box
         sx={{
           mt:'12vh',
-          mb:'5vh',
+          mb:'2vh',
           display:'flex',
           justifyContent: 'space-evenly'
         }}
