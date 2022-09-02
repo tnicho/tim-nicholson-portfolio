@@ -36,7 +36,7 @@ export default function ProjectSelection(props) {
         <ProjectSelectionCard 
         title = "AMPLESS" 
         imagesrc = "./PortfolioPics/Screenshots/Ampless Card Picture.png"
-        description = "A full CRUD, MERN web app for desktop to manipulate audio inputs."
+        description = "A MERN web app to manipulate audio inputs."
         technologies = "Express, Node,js, MongoDB, React, Material UI, Web Audio API"
         handleProjectSelection = {props.handleProjectSelection}
         />
