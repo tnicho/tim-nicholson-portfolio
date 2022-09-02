@@ -8,7 +8,7 @@ export default function SkillsDisplay(props) {
       sx={{
         margin:'10px', 
         width: '40vw', 
-        height: '60vh', 
+        height: '70vh', 
         display: 'flex', 
         flexDirection:'column', 
         justifyContent:'space-evenly',
