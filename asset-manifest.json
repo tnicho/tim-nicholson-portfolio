@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba7feeda.css",
-    "main.js": "/static/js/main.2d288e66.js",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/1.svg": "/static/media/1.dc99f03674900785498e1511613fef86.svg",
-    "index.html": "/index.html",
-    "main.ba7feeda.css.map": "/static/css/main.ba7feeda.css.map",
-    "main.2d288e66.js.map": "/static/js/main.2d288e66.js.map"
+    "main.css": "/tim-nicholson-portfolio/static/css/main.db171cae.css",
+    "main.js": "/tim-nicholson-portfolio/static/js/main.e25ab5d7.js",
+    "static/media/slick.svg": "/tim-nicholson-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/tim-nicholson-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/tim-nicholson-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/tim-nicholson-portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/1.svg": "/tim-nicholson-portfolio/static/media/1.dc99f03674900785498e1511613fef86.svg",
+    "index.html": "/tim-nicholson-portfolio/index.html",
+    "main.db171cae.css.map": "/tim-nicholson-portfolio/static/css/main.db171cae.css.map",
+    "main.e25ab5d7.js.map": "/tim-nicholson-portfolio/static/js/main.e25ab5d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba7feeda.css",
-    "static/js/main.2d288e66.js"
+    "static/css/main.db171cae.css",
+    "static/js/main.e25ab5d7.js"
   ]
 }
