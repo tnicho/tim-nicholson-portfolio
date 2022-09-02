@@ -75,7 +75,7 @@ export default function LinkDisplay() {
         }}
         >
           <a href = './Timothy Nicholson Resume.pdf' download="Timothy Nicholson Resume">
-            <img height = "200px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
+            <img height = "250px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
           </a>
         </Box>
       </Box>
