@@ -29,7 +29,7 @@ export default function ProjectSelection(props) {
         <ProjectSelectionCard 
           title ="Digipets Forever" 
           imagesrc="./PortfolioPics/Screenshots/Digipets Card Picture.png"
-          description = 'A full CRUD app for mobile working on a team including UX Designers.'
+          description = 'A full CRUD game for mobile.'
           technologies ="Python, Django, HTML, CSS, TailwindCSS, PostgreSQL"
           handleProjectSelection = {props.handleProjectSelection}
           />
