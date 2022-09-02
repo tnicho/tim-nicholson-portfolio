@@ -61,7 +61,7 @@ export default function LinkDisplay() {
           alignItems:'center'
         }}      
       >
-        <Typography varient='h5' sx={{mb:1}}>Or download my resume directly by clicking below</Typography>
+        <Typography variant='h5' sx={{mb:1}}>Or download my resume directly by clicking below</Typography>
         <Box
           sx={{
           // height:"400px",
