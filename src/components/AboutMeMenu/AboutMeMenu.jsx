@@ -5,7 +5,7 @@ export default function AboutMeMenu(props) {
   return (
     <Box
       sx={{
-        mt: '5vh',
+        mt: '7vh',
         height:'100%',
         display: 'flex',
         flexDirection: 'column',
