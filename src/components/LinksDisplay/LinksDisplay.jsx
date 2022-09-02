@@ -29,8 +29,8 @@ export default function LinkDisplay() {
             window.open("https://github.com/tnicho")
           }}
         >
-          <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
-          <Typography>Github</Typography>
+          <img height = "80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
+          <Typography align='center'>Github</Typography>
         </Box>
         <Box
           sx={{
@@ -46,8 +46,8 @@ export default function LinkDisplay() {
             window.open("https://www.linkedin.com/in/timothyrinicholson/")
           }}
         >
-          <img height = "100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
-          <Typography>LinkedIn</Typography>
+          <img height = "80px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
+          <Typography align='center'>LinkedIn</Typography>
         </Box>
       </Box>
       
@@ -64,8 +64,10 @@ export default function LinkDisplay() {
         <Typography>Or download my resume directly by clicking below</Typography>
         <Box
           sx={{
-          height:"400px",
-          width:"310px",
+          // height:"400px",
+          // width:"310px",
+          height:"300px",
+          width:"233px",
           '&:hover': {
             opacity: [0.9, 0.8, 0.7],
             cursor: 'pointer'
