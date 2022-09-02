@@ -41,9 +41,9 @@ export default function ContactMeDisplay() {
         ref={form}
         onSubmit={sendEmail}
         sx={{
-          mx:'5vw',
-          my:'2vw',
-          '& .MuiTextField-root': { m: 1, width: '40ch', background: '#FFFFFF'},
+          mx:'2vw',
+          my:'2vh',
+          '& .MuiTextField-root': { m: 1, width: '50ch', background: '#FFFFFF'},
           '& .MuiButton-root':{ textPrimary:{color: 'primary.main'}}
         }}
         noValidate
