@@ -43,7 +43,7 @@ export default function ContactMeDisplay() {
         sx={{
           mx:'5vw',
           my:'2vw',
-          '& .MuiTextField-root': { m: 1, width: '50ch', background: '#FFFFFF'},
+          '& .MuiTextField-root': { m: 1, width: '40ch', background: '#FFFFFF'},
           '& .MuiButton-root':{ textPrimary:{color: 'primary.main'}}
         }}
         noValidate
