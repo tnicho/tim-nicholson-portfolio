@@ -18,7 +18,7 @@ export default function LinkDisplay() {
         <Box
           sx={{
             mx:'3vw',
-            my:'1vw',
+            my:'1vh',
             '&:hover': {
               opacity: [0.9, 0.8, 0.7],
               cursor: 'pointer',
@@ -35,7 +35,7 @@ export default function LinkDisplay() {
         <Box
           sx={{
             mx:'3vw',
-            my:'1vw',
+            my:'1vh',
             '&:hover': {
               opacity: [0.9, 0.8, 0.7],
               cursor: 'pointer', 
@@ -54,14 +54,14 @@ export default function LinkDisplay() {
       <Box
         sx={{
           mx:'3vw',
-          my:'1vw',
+          my:'1vh',
           display: 'flex',
           flexDirection:'column',
           justifyContent:'center',
           alignItems:'center'
         }}      
       >
-        <Typography>Or download my resume directly by clicking below</Typography>
+        <Typography sx={{mb:1}}>Or download my resume directly by clicking below</Typography>
         <Box
           sx={{
           // height:"400px",

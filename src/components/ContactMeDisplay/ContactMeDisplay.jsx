@@ -35,7 +35,7 @@ export default function ContactMeDisplay() {
       color: 'secondary.light'
     }}
     >
-      <Typography align='center' variant='h5'>I want to hear from you</Typography>
+      <Typography align='center' variant='h4'>I want to hear from you</Typography>
       <Box
         component="form"
         ref={form}
@@ -76,7 +76,7 @@ export default function ContactMeDisplay() {
         defaultValue=""
         variant="filled"
         multiline
-        rows={6}
+        rows={5}
       />
       <Box sx={{display:'flex', justifyContent:'flex-end'}} >
       <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}} align='right' variant ="contained" size="large" type="submit" value="Send" endIcon={<SendIcon />}>Send</Button>
