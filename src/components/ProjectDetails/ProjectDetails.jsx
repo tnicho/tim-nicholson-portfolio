@@ -24,7 +24,7 @@ export default function ProjectDetails(props) {
         sx={{
           bgcolor: "secondary.light",
           borderBottom: 1,
-          height:'22vh',
+          height: {lg:'22vh', sm:"10vh"},
         }}>
           <Typography align= 'center' sx={{fontWeight:'bold'}}>Description</Typography>
           <Typography align='left' sx={{px:1}}>{props.description}</Typography>
@@ -34,7 +34,7 @@ export default function ProjectDetails(props) {
             bgcolor: 'primary.main',
             color: "secondary.light",
             borderBottom: 1,
-            height:'12vh'
+            height:{lg:'12vh',sm:'5vh'}
           }}>
             <Typography align= 'center' sx={{fontWeight:'bold'}}>Technology Used</Typography>
             <Typography align='left' sx={{p:1}}> {props.tech}</Typography>
