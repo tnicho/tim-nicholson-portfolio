@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tim-nicholson-portfolio/static/css/main.db171cae.css",
-    "main.js": "/tim-nicholson-portfolio/static/js/main.c1450682.js",
+    "main.js": "/tim-nicholson-portfolio/static/js/main.56208bc1.js",
     "static/media/slick.svg": "/tim-nicholson-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/tim-nicholson-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/tim-nicholson-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -9,10 +9,10 @@
     "static/media/1.svg": "/tim-nicholson-portfolio/static/media/1.dc99f03674900785498e1511613fef86.svg",
     "index.html": "/tim-nicholson-portfolio/index.html",
     "main.db171cae.css.map": "/tim-nicholson-portfolio/static/css/main.db171cae.css.map",
-    "main.c1450682.js.map": "/tim-nicholson-portfolio/static/js/main.c1450682.js.map"
+    "main.56208bc1.js.map": "/tim-nicholson-portfolio/static/js/main.56208bc1.js.map"
   },
   "entrypoints": [
     "static/css/main.db171cae.css",
-    "static/js/main.c1450682.js"
+    "static/js/main.56208bc1.js"
   ]
 }
