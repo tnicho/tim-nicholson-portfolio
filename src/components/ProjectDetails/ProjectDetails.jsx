@@ -17,7 +17,7 @@ export default function ProjectDetails(props) {
         color: "secondary.light", 
         fontWeight:'bold', 
         letterSpacing: 2,
-        p:2
+        p:1
         }} 
         align= 'center'
         variant="h4">{props.title}</Typography>
