@@ -8,7 +8,7 @@ export default function ProjectDisplay(props) {
     <Box
       sx={{
           display: 'flex',
-          flexDirection:{lg:'row', md: 'column', sm:'column'},
+          flexDirection:{lg:'row', md: 'column', sm:'column', xs:'column'},
           justifyContent: {lg:"space-evenly", sm:'center'},
           alignItems: {sm:'center'}
       }}
