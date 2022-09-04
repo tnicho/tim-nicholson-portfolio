@@ -16,7 +16,8 @@ export default function ProjectDetails(props) {
         bgcolor: 'primary.main',
         color: "secondary.light", 
         fontWeight:'bold', 
-        letterSpacing: 2
+        letterSpacing: 2,
+        p:2
         }} 
         align= 'center'
         variant="h4">{props.title}</Typography>
@@ -34,14 +35,13 @@ export default function ProjectDetails(props) {
             bgcolor: 'primary.main',
             color: "secondary.light",
             borderBottom: 1,
-            height:{lg:'12vh',sm:'5vh'}
+            height:{lg:'12vh',sm:'6vh'}
           }}>
             <Typography align= 'center' sx={{fontWeight:'bold'}}>Technology Used</Typography>
             <Typography align='left' sx={{p:1}}> {props.tech}</Typography>
       </Box>
       <Box
         sx={{
-            
             background: "secondary.main",
             pb: 1
           }}>
