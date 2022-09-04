@@ -51,7 +51,7 @@ export default function ProjectDetails(props) {
                   background: "secondary.main",
                   display: "flex",
                   justifyContent: 'space-around',
-                  pb:'1'
+                  pb:'5px'
                 }}>
             <Link sx={{fontWeight: 'bold'}} href={props.linkDeployed}>Deployed App</Link> <Link sx={{fontWeight: 'bold', pr: 3}} href={props.linkGithub}>Github</Link>
             </Box>

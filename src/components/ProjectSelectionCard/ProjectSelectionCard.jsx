@@ -14,7 +14,11 @@ export default function ProjectSelectionCard (props){
           image={props.imagesrc}
         />
         <CardContent id={props.title}>
-          <Typography align='center' id={props.title} variant="subtitle2" component="div" sx={{fontWeight: 'bold'}}>{props.title}</Typography>
+          
+          {[theme.breakpoints.down('md')] ?
+            <Typography align='center' id={props.title} variant="subtitle2" component="div" sx={{fontWeight: 'bold'}}>{props.title}</Typography>
+            : 'none' 
+           }
           <Typography id={props.title} variant="body2" color="text.secondary">{props.description}</Typography>
         </CardContent>
       </CardActionArea>
