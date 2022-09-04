@@ -9,7 +9,7 @@ export default function ProjectDisplay(props) {
       sx={{
           display: 'flex',
           flexDirection:{lg:'row', md: 'column', sm:'column'},
-          justifyContent: "space-evenly",
+          justifyContent: {lg:"space-evenly", sm:'center'},
           alignItems: {sm:'center'}
       }}
     >
