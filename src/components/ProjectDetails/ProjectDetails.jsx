@@ -8,7 +8,7 @@ export default function ProjectDetails(props) {
     sx={{
       mr: 15,
       mt:'20px',
-      height: {lg:'50vh', sm: '40vh'},
+      height: {lg:'50vh', sm: '25vh'},
       width: {lg:"40vw", sm:"80vw"}
     }}
     >
