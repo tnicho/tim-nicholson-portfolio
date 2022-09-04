@@ -8,7 +8,7 @@ export default function ProjectDetails(props) {
     sx={{
       mr: {lg: 15},
       mt:'20px',
-      height: {lg:'50vh', sm: '25vh'},
+      height: {lg:'50vh', sm: '27vh'},
       width: {lg:"40vw", sm:"80vw"}
     }}
     >
@@ -51,6 +51,7 @@ export default function ProjectDetails(props) {
                   background: "secondary.main",
                   display: "flex",
                   justifyContent: 'space-around',
+                  pb:'1'
                 }}>
             <Link sx={{fontWeight: 'bold'}} href={props.linkDeployed}>Deployed App</Link> <Link sx={{fontWeight: 'bold', pr: 3}} href={props.linkGithub}>Github</Link>
             </Box>
