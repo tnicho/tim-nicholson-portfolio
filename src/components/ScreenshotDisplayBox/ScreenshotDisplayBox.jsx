@@ -8,8 +8,8 @@ export default function ProjectDisplay(props){
     <Paper
       elevation={20}
       sx={{
-          ml: 15,
-          mr: 10,
+          ml: {lg: 15},
+          mr: {lg: 10},
           my: 2,
           height: 360,
           width: 640
