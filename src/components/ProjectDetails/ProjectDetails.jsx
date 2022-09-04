@@ -9,7 +9,7 @@ export default function ProjectDetails(props) {
       mr: 15,
       mt:'20px',
       height: '50vh',
-      width: "40vw",
+      width: {lg:"40vw", sm:"80vw"}
     }}
     >
       <Typography sx={{

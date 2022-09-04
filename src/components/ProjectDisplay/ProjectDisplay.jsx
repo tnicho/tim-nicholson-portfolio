@@ -9,7 +9,8 @@ export default function ProjectDisplay(props) {
       sx={{
           display: 'flex',
           flexDirection:{lg:'row', md: 'column', sm:'column'},
-          justifyContent: "space-evenly"
+          justifyContent: "space-evenly",
+          alignItems: {sm:'center'}
       }}
     >
       <ScreenshotDisplayBox screenshots = {props.project.screenshots}/>
