@@ -11,8 +11,8 @@ export default function ProjectDisplay(props){
           ml: {lg: 15},
           mr: {lg: 10},
           my: 2,
-          height: 360,
-          width: 640
+          height: {lg: 360, xs: 90},
+          width: {lg: 640, xs: 160}
         }}
       >
       <ScreenshotCarousel screenshots={props.screenshots}/>
