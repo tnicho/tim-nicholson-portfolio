@@ -16,7 +16,7 @@ export default function NavBar() {
         // bgcolor: '#1B721B',
         // color: '#FFFFFF',
         color: 'secondary.light',
-        bgcolor: 'primary.main',
+        bgcolor: {lg:'primary.main', sm: 'blue', xs: 'black'},
         top: '0',
         margin: '0',
         zIndex: '9',
