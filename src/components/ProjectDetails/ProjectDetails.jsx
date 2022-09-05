@@ -28,7 +28,7 @@ export default function ProjectDetails(props) {
           borderBottom: 1,
           height: {lg:'22vh', sm:"10vh"},
         }}>
-          <Typography align= 'center' sx={{fontWeight:'bold'}}>Description</Typography>
+          <Typography align= 'center' sx={{fontWeight:'bold', display:{xs:'none'}}}>Description</Typography>
           <Typography align='left' sx={{px:1}}>{props.description}</Typography>
       </Box>
       <Box
@@ -46,7 +46,7 @@ export default function ProjectDetails(props) {
             background: "secondary.main",
             pb: 1
           }}>
-            <Typography align= 'center' sx={{fontWeight:'bold'}}>Links</Typography>
+            <Typography align= 'center' sx={{fontWeight:'bold', display:{xs:'none'}}}>Links</Typography>
             <Box
               sx={{
                   background: "secondary.main",
