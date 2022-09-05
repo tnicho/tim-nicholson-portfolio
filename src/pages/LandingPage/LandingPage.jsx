@@ -53,7 +53,7 @@ export default class LandingPage extends Component {
         
           onClick= {this.handleLogoChange}
         >
-          <TimLogo style={{height: '60vh', width: '70vw'}} fill={this.state.logoFillColour} stroke={this.state.logoStrokeColour}/>
+          <TimLogo style={{height: {lg:'60vh', xs:'auto'}, width: '70vw'}} fill={this.state.logoFillColour} stroke={this.state.logoStrokeColour}/>
         </Box>
         <ArrowUpwardIcon/>
         <Typography>Click These</Typography>
