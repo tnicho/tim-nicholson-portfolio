@@ -2,6 +2,7 @@ import React, { Component, Dimensions } from "react"
 import {Box, Typography} from "@mui/material"
 import AboutMeMenu from "../../components/AboutMeMenu/AboutMeMenu"
 import AboutMeDisplay from "../../components/AboutMeDisplay/AboutMeDisplay"
+import AboutMeButtons from "../../components/AboutMeButtons/AboutMeButtons"
 
 
 
@@ -93,10 +94,14 @@ export default class AboutMePage extends Component{
           <Box
           sx={{
             display: 'flex',
+            flexDirection: {lg: 'row', xs: 'column-reverse'},
             p: '10vh',
             }}>
               <Box sx={{display: {xs: 'none'}}}>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />
+              </Box>
+              <Box sx={{display: {xs: 'none'}}}>
+              <AboutMeButtons handleAboutChange={this.handleAboutChange} />
               </Box>
               <AboutMeDisplay 
                 bioShow = {this.state.bioShow} 
