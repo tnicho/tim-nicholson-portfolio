@@ -8,9 +8,10 @@ export default function ProjectSelection(props) {
         sx={{
           mt:'9vh',
           mb:'2vh',
-          display:{lg:'flex', xs:'grid'},
-          gridTemplateRows: 'auto auto',
-          gridTemplateColumns: 'auto auto',
+          display:'flex',
+          // display:{lg:'flex', xs:'grid'},
+          // gridTemplateRows: 'auto auto',
+          // gridTemplateColumns: 'auto auto',
           justifyContent: 'space-evenly'
         }}
       >
