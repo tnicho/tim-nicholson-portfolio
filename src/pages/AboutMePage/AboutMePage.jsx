@@ -76,56 +76,6 @@ export default class AboutMePage extends Component{
     setTimeout(() =>this.ElevateChange(), 2700)
   }
 
-
-  // handleAboutChange = (evt) => {
-  //   if (evt.target.id === 'education'){
-  //     console.log('edu')
-  //     console.log(this.state.educationShow)
-  //     this.setState({
-  //       bioShow: false,
-  //       technologyShow: false,
-  //       educationShow: true,
-  //       zIndexBio: 'modal',
-  //       zIndexTechnology: 'modal',
-  //       zIndexEducation: 'tooltip',
-  //       error: "",
-  //     });
-  //   }else if (evt.target.id === 'technology'){
-  //     console.log('tech')
-  //     this.setState({
-  //       bioShow: false,
-  //       technologyShow: false,
-  //       educationShow: false,
-  //       zIndexBio: 1300,
-  //       zIndexTechnology: 1500,
-  //       zIndexEducation: 1300,
-  //       error: "",
-  //     });
-  //     setTimeout(1000)
-  //     this.setState({
-  //       bioShow: false,
-  //       technologyShow: true,
-  //       educationShow: false,
-  //       zIndexBio: 1300,
-  //       zIndexTechnology: 1500,
-  //       zIndexEducation: 1300,
-  //       error: "",
-  //     });
-
-  //   }else if (evt.target.id === 'biography'){
-  //     console.log('bio')
-  //     this.setState({
-  //       bioShow: true,
-  //       technologyShow: false,
-  //       educationShow: false,
-  //       zIndexBio: 1500,
-  //       zIndexTechnology: 1300,
-  //       zIndexEducation: 1300,
-  //       error: "",
-  //     });
-  //   }
-  // }
-
   render (){
     
     return(
@@ -145,7 +95,9 @@ export default class AboutMePage extends Component{
             display: 'flex',
             p: '10vh',
             }}>
+              <Box>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />
+              </Box>
               <AboutMeDisplay 
                 bioShow = {this.state.bioShow} 
                 technologyShow = {this.state.technologyShow} 
