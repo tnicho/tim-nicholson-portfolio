@@ -15,10 +15,10 @@ export default function ProjectSelectionCard (props){
         />
         <CardContent id={props.title}>
           
-          {[theme.breakpoints.down('md')] ?
+          {/* {[theme.breakpoints.down('md')] ?
             <Typography align='center' id={props.title} variant="subtitle2" component="div" sx={{fontWeight: 'bold'}}>{props.title}</Typography>
             : <Typography align='center' id={props.title} variant="subtitle2" component="div" sx={{fontWeight: 'bold'}}>it worked</Typography>
-           }
+           } */}
           <Typography id={props.title} variant="body2" color="text.secondary">{props.description}</Typography>
         </CardContent>
       </CardActionArea>
