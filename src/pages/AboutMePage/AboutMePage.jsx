@@ -95,7 +95,7 @@ export default class AboutMePage extends Component{
             display: 'flex',
             p: '10vh',
             }}>
-              <Box>
+              <Box sx={{display: {xs: 'none'}}}>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />
               </Box>
               <AboutMeDisplay 
