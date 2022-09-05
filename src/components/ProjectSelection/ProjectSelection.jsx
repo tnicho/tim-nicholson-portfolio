@@ -10,6 +10,7 @@ export default function ProjectSelection(props) {
           mb:'2vh',
           display:{lg:'flex', xs:'grid'},
           gridTemplateRows: 'auto auto',
+          gridTemplateColumns: 'auto auto',
           justifyContent: 'space-evenly'
         }}
       >
