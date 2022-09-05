@@ -17,7 +17,7 @@ export default function ProjectSelectionCard (props){
           
           {[theme.breakpoints.down('md')] ?
             <Typography align='center' id={props.title} variant="subtitle2" component="div" sx={{fontWeight: 'bold'}}>{props.title}</Typography>
-            : 'none' 
+            : <Typography align='center' id={props.title} variant="subtitle2" component="div" sx={{fontWeight: 'bold'}}>it worked</Typography>
            }
           <Typography id={props.title} variant="body2" color="text.secondary">{props.description}</Typography>
         </CardContent>
