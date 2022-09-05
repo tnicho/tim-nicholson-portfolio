@@ -100,7 +100,7 @@ export default class AboutMePage extends Component{
               <Box sx={{display: {xs: 'none'}}}>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />
               </Box>
-              <Box sx={{display: {xs: 'none'}}}>
+              <Box sx={{display: {sm: 'none'}}}>
               <AboutMeButtons handleAboutChange={this.handleAboutChange} />
               </Box>
               <AboutMeDisplay 
