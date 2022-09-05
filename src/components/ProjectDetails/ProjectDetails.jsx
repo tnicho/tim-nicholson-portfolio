@@ -7,6 +7,7 @@ export default function ProjectDetails(props) {
     elevation={20}
     sx={{
       mr: {lg: 15},
+      mx: {xs: 5},
       mt:'20px',
       height: {lg:'50vh', sm: '27vh'},
       width: {lg:"40vw", sm:"80vw"}
