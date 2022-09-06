@@ -6,14 +6,7 @@ export default function AboutMeButtons(props) {
     <Box
         sx={{display:'flex', height: '20vh'}}
     >
-        <Button
-        sx={{
-          height: 5,
-          width: 20
-        }}
-          variant = "contained"
-          onClick = {props.handleAboutChange}
-        >Biography</Button>
+      <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}}variant ="contained" size="large" onClick = {props.handleAboutChange} >BIOGRAPHY</Button>
         <Button
           variant = "contained"
           onClick = {props.handleAboutChange}
