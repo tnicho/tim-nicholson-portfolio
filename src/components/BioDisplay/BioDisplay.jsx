@@ -8,7 +8,7 @@ export default function BioDisplay(props) {
       sx={{
         margin:'10px',
         mt: '7vh', 
-        width: '40vw', 
+        width: {lg:'40vw', xs:'80vw'}, 
         height: '60vh', 
         display: 'flex', 
         flexDirection:'column',

@@ -7,16 +7,16 @@ export default function AboutMeButtons(props) {
         sx={{display:'flex'}}
     >
         <Button
-        
-        onClick = {props.handleAboutChange}
+          variant = "contained"
+          onClick = {props.handleAboutChange}
         >Biography</Button>
         <Button
-
-        onClick = {props.handleAboutChange}
+          variant = "contained"
+          onClick = {props.handleAboutChange}
         >Technology</Button>
         <Button
-
-        onClick = {props.handleAboutChange}
+          variant = "contained"
+          onClick = {props.handleAboutChange}
         >Education</Button>
     </Box>
   )
