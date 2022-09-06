@@ -95,7 +95,7 @@ export default class AboutMePage extends Component{
           sx={{
             display: 'flex',
             flexDirection: {lg: 'row', xs: 'column-reverse'},
-            p: '10vh',
+            p: {lg:'10vh', xs: 0}
             }}>
               <Box sx={{display: {lg: 'flex', xs: 'none'}}}>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />

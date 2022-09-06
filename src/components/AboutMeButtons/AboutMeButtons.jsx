@@ -4,7 +4,7 @@ import { Box, Button } from '@mui/material'
 export default function AboutMeButtons(props) {
   return (
     <Box
-        sx={{display:'flex', height: '20vh'}}
+        sx={{display:'flex'}}
     >
       <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}}variant ="contained" size="large" onClick = {props.handleAboutChange} >BIOGRAPHY</Button>
         <Button
