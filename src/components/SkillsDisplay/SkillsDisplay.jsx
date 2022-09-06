@@ -7,7 +7,7 @@ export default function SkillsDisplay(props) {
       elevation = {props.elevation}
       sx={{
         margin:'10px', 
-        width: {lg:'40vw', xs:'80vw'},  
+        width: '40vw',  
         height: '70vh', 
         display: 'flex', 
         flexDirection:'column', 

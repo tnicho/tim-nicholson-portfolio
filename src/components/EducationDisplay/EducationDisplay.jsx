@@ -3,7 +3,7 @@ import { Paper, Typography, Box} from '@mui/material'
 
 export default function EducationDisplay(props) {
   return (
-    <Paper elevation = {props.elevation} sx={{margin:'10px', mt: '7vh', width: {lg:'40vw', xs:'80vw'}, height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
+    <Paper elevation = {props.elevation} sx={{margin:'10px', mt: '7vh', width:'40vw', height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
       <Typography align='center' variant='h3'>EDUCATION</Typography>
       <Box 
         sx={{display:'flex'}}
