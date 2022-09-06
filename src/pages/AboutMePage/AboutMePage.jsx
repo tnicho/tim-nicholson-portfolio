@@ -100,9 +100,9 @@ export default class AboutMePage extends Component{
               <Box sx={{display: {lg: 'flex', xs: 'none'}}}>
               <AboutMeMenu handleAboutChange={this.handleAboutChange} />
               </Box>
-              {/* <Box sx={{display: {sm: 'none'}}}>
+              <Box sx={{display: {sm: 'none'}}}>
               <AboutMeButtons handleAboutChange={this.handleAboutChange} />
-              </Box> */}
+              </Box>
               <AboutMeDisplay 
                 bioShow = {this.state.bioShow} 
                 technologyShow = {this.state.technologyShow} 

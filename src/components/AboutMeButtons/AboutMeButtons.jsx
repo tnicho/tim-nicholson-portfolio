@@ -6,8 +6,8 @@ export default function AboutMeButtons(props) {
     <Box
         sx={{display:'flex'}}
     >
-      <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}}variant ="contained" size="large" id="biography" onClick = {props.handleAboutChange} >BIOGRAPHY</Button>
-        {/* <Button
+      {/* <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}}variant ="contained" size="large" id="biography" onClick = {props.handleAboutChange} >BIOGRAPHY</Button>
+        <Button
           sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}}variant ="contained" size="large"
           onClick = {props.handleAboutChange}
           id="technology"
