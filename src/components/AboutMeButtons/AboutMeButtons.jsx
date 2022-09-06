@@ -7,6 +7,10 @@ export default function AboutMeButtons(props) {
         sx={{display:'flex', height: '20vh'}}
     >
         <Button
+        sx={{
+          height: 5,
+          width: 20
+        }}
           variant = "contained"
           onClick = {props.handleAboutChange}
         >Biography</Button>
