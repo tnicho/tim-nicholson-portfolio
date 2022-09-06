@@ -4,7 +4,7 @@ import { Box, Button } from '@mui/material'
 export default function AboutMeButtons(props) {
   return (
     <Box
-        sx={{display:'flex'}}
+        sx={{display:'flex', height: '20vh'}}
     >
         <Button
           variant = "contained"
