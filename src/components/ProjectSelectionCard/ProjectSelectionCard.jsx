@@ -3,7 +3,7 @@ import {Box, Button, Card, CardMedia, CardContent, CardActions,  CardActionArea,
 
 export default function ProjectSelectionCard (props){
   return(
-    <Card elevation={10} sx={{width:{lg: 180, xs: 100}, height: {xs:130}, mt: {xs:1}}} >
+    <Card elevation={10} sx={{width:{lg: 180, xs: 100}, height: {lg: "", xs:130,}, mt: {xs:1}}} >
       <CardActionArea
         onClick = {props.handleProjectSelection}
       >
