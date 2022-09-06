@@ -29,7 +29,7 @@ export default function LinkDisplay() {
             window.open("https://github.com/tnicho")
           }}
         >
-          <img height = "70px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
+          <img height = "70px" alt ='Github Logo' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
           <Typography align='center'>Github</Typography>
         </Box>
         <Box
@@ -46,7 +46,7 @@ export default function LinkDisplay() {
             window.open("https://www.linkedin.com/in/timothyrinicholson/")
           }}
         >
-          <img height = "70px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
+          <img height = "70px" alt = 'LinkedIn Logo' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" style={{filter: 'invert(97%) sepia(7%) saturate(2%) hue-rotate(121deg) brightness(117%) contrast(100%)'}}/>
           <Typography align='center'>LinkedIn</Typography>
         </Box>
       </Box>
@@ -75,7 +75,7 @@ export default function LinkDisplay() {
         }}
         >
           <a href = './Timothy Nicholson Resume.pdf' download="Timothy Nicholson Resume">
-            <img height = "300px" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
+            <img height = "300px" alt="Resume Download" src="./PortfolioPics/Screenshots/Timothy Nicholson Resume.png" />
           </a>
         </Box>
       </Box>

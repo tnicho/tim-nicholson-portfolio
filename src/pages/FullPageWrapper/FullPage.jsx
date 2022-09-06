@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box} from '@mui/material'
 import ReactFullpage from '@fullpage/react-fullpage';
 import LandingPage from '../LandingPage/LandingPage';
 import ProjectsPage from '../ProjectsPage/ProjectsPage';

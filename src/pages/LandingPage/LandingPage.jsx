@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {Box, Typography, Icon} from "@mui/material"
+import {Box, Typography} from "@mui/material"
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import randomColor from "randomcolor"

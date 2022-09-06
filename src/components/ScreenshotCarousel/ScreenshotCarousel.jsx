@@ -17,7 +17,7 @@ export default function ScreenshotCarousel (props) {
       <Box>
         <Slider {...settings}>
         {screenshots.map(screenshot => {
-          return <img  src={screenshot}/>
+          return <img alt='Project Screenshot' src={screenshot}/>
         })}
         </Slider>
       </Box>

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import {Typography, Box} from "@mui/material"
+import { Box} from "@mui/material"
 import ProjectSelection from "../../components/ProjectSelection/ProjectSelection"
 import ProjectDisplay from "../../components/ProjectDisplay/ProjectDisplay"
 

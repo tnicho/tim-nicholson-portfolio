@@ -1,5 +1,5 @@
 import React from 'react'
-import {Typography, Box, Slide,Fade, Tooltip} from "@mui/material"
+import {Box, Slide} from "@mui/material"
 import BioDisplay from "../../components/BioDisplay/BioDisplay"
 import SkillsDisplay from "../../components/SkillsDisplay/SkillsDisplay"
 import EducationDisplay from "../../components/EducationDisplay/EducationDisplay"

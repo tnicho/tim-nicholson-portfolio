@@ -1,5 +1,5 @@
 import React from "react"
-import {Box, Typography} from "@mui/material"
+import {Box} from "@mui/material"
 import ContactMeDisplay from "../../components/ContactMeDisplay/ContactMeDisplay"
 import ResumeDisplay from "../../components/ResumeDisplay/ResumeDisplay"
 

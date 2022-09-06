@@ -1,5 +1,5 @@
-import React, { Component, Dimensions } from "react"
-import {Box, Typography} from "@mui/material"
+import React, { Component } from "react"
+import {Box} from "@mui/material"
 import AboutMeMenu from "../../components/AboutMeMenu/AboutMeMenu"
 import AboutMeDisplay from "../../components/AboutMeDisplay/AboutMeDisplay"
 import AboutMeButtons from "../../components/AboutMeButtons/AboutMeButtons"

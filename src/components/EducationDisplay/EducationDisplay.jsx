@@ -10,7 +10,7 @@ export default function EducationDisplay(props) {
         mt={3}
         >
           <Box mt={1}>
-            <img height="100px" src="./Western Logo.jpg"/>
+            <img height="100px" src="./Western Logo.jpg" alt='Western Logo'/>
           </Box>
         <Box >
           <Box sx={{
@@ -37,7 +37,7 @@ export default function EducationDisplay(props) {
         sx={{display:'flex'}}
         my={3}
       >
-        <img height="100px" src="./GA Logo.jpg"/>
+        <img height="100px" src="./GA Logo.jpg" alt='General Assembly Logo'/>
         <Box>
           <Box sx={{
             display:'flex',
