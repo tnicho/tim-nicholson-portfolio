@@ -85,7 +85,7 @@ export default function EducationDisplay(props) {
               <Typography align='left' mx={2}>
                 3 Month intensive bootcamp consisting of over 450 hours of building 
                 fluency in full-stack web development with a focus on object-oriented programming, 
-                MVC Frameworks, team colaboration strategies, and best coding practices.
+                MVC Frameworks, team collaboration strategies, and best coding practices.
               </Typography>
             </Box>
           </Box>
