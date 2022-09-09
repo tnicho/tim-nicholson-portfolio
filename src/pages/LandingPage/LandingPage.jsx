@@ -58,7 +58,7 @@ export default class LandingPage extends Component {
         <ArrowUpwardIcon/>
         <Typography>Click These</Typography>
         <ArrowDownwardIcon/>
-        <WelcomeButton/>
+         <WelcomeButton/>
       </Box>
     )
   }

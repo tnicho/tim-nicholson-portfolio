@@ -94,7 +94,7 @@ export default class AboutMePage extends Component{
           <Box
           sx={{
             display: 'flex',
-            flexDirection: {lg: 'row', xs: 'column-reverse'},
+            flexDirection: {lg: 'row', xs: 'column'},
             p: {lg:'10vh', xs: 0}
             }}>
               <Box sx={{display: {lg: 'flex', xs: 'none'}}}>

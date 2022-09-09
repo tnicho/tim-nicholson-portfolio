@@ -1,5 +1,20 @@
 import React from 'react'
 import {Box, Typography, Link, Paper} from '@mui/material'
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+
+let theme = createTheme({
+  palette:{
+    primary:{
+      main: '#1B721B'
+    },
+    secondary:{
+      light: '#FFFFFF',
+      main: '#D3D3D3',
+    }
+  },
+})
+
+theme = responsiveFontSizes(theme);
 
 export default function ProjectDetails(props) {
   return (
@@ -8,20 +23,21 @@ export default function ProjectDetails(props) {
     sx={{
       mr: {lg: 15},
       mx: {xs: 5},
-      mt:'20px',
+      mt:{lg:'20px', xs: '5px'},
       height: {lg:'50vh', sm: '27vh'},
       width: {lg:"40vw", sm:"80vw"}
     }}
     >
+      <ThemeProvider theme = {theme}>
       <Typography sx={{
         bgcolor: 'primary.main',
         color: "secondary.light", 
         fontWeight:'bold', 
         letterSpacing: 2,
         p:1
-        }} 
-        align= 'center'
-        variant="h4">{props.title}</Typography>
+      }} 
+      align= 'center'
+      variant="h4">{props.title}</Typography>
       <Box
         sx={{
           bgcolor: "secondary.light",
@@ -33,30 +49,32 @@ export default function ProjectDetails(props) {
       </Box>
       <Box
         sx={{
-            bgcolor: 'primary.main',
-            color: "secondary.light",
-            borderBottom: 1,
-            height:{lg:'12vh',sm:'6vh'}
-          }}>
+          bgcolor: 'primary.main',
+          color: "secondary.light",
+          borderBottom: 1,
+          height:{lg:'12vh',sm:'6vh'}
+        }}>
             <Typography align= 'center' sx={{fontWeight:'bold'}}>Technology Used</Typography>
             <Typography align='left' sx={{p:1}}> {props.tech}</Typography>
       </Box>
       <Box
         sx={{
-            background: "secondary.main",
-            pb: 1
-          }}>
+          background: "secondary.main",
+          pb: 1
+        }}>
             <Typography align= 'center' sx={{fontWeight:'bold', display:{xs:'none'}}}>Links</Typography>
             <Box
               sx={{
-                  background: "secondary.main",
-                  display: "flex",
-                  justifyContent: 'space-around',
-                  pb:'5px'
-                }}>
+                background: "secondary.main",
+                display: "flex",
+                justifyContent: 'space-around',
+                pb: {lg:'5px', xs: '2px'},
+                pt: {lg:'', xs: '2px'}
+              }}>
             <Link sx={{fontWeight: 'bold'}} href={props.linkDeployed}>Deployed App</Link> <Link sx={{fontWeight: 'bold', pr: 3}} href={props.linkGithub}>Github</Link>
             </Box>
       </Box>
+      </ThemeProvider>
     </Paper>
   )
 }

@@ -1,8 +1,9 @@
 import './App.css';
 import React from "react";
 import { Fullpage } from './pages/FullPageWrapper/FullPage';
-import { CssBaseline, Box, createTheme, ThemeProvider} from '@mui/material';
+import { CssBaseline, Box, createTheme, ThemeProvider, AppBar} from '@mui/material';
 import NavBar from './components/NavBar/NavBar';
+import NavBarMobile from './components/NavBarMobile/NavBarMobile';
 const theme = createTheme({
   palette:{
     primary:{
@@ -20,7 +21,12 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box className="`App">
         <CssBaseline/>
-        <NavBar/>
+        <Box sx={{display: {lg: 'flex', xs: 'none'}}}>
+          <NavBar/>
+        </Box>
+        <Box sx={{display: {sm: 'none'}}}>
+          <NavBarMobile/>
+        </Box>
         <Fullpage />
       </Box>
     </ThemeProvider>

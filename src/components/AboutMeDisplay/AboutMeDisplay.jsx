@@ -10,8 +10,9 @@ export default function AboutMeDisplay(props) {
     <Box
     sx={{
       display: 'flex',
-      width: '60vw',
-      ml: '10vw'
+      justifyContent:'center',
+      width: {lg:'60vw', xs: '100vw'},
+      ml: {lg:'10vw'}
     }}
     >
         <Slide direction="left" appear={true} mountOnEnter unmountOnExit in={props.bioShow} timeout={{ enter: 1000, exit: 1000}}>

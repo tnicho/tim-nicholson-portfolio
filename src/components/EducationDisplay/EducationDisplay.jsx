@@ -1,13 +1,44 @@
 import React from 'react'
 import { Paper, Typography, Box} from '@mui/material'
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+
+let theme = createTheme({
+  palette:{
+    primary:{
+      main: '#1B721B'
+    },
+    secondary:{
+      light: '#FFFFFF',
+      main: '#D3D3D3',
+    }
+  },
+})
+
+theme = responsiveFontSizes(theme);
+
 
 export default function EducationDisplay(props) {
   return (
-    <Paper elevation = {props.elevation} sx={{margin:'10px', mt: '7vh', width:{lg:'40vw', xs:'80vw'}, height: '60vh', display: 'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
+    <Paper 
+    elevation = {props.elevation} 
+    sx={{
+      margin:'10px', 
+      mt: {lg:'7vh', xs:'3vh'},
+      pt:{xs:'2vh'}, 
+      width:{lg:'40vw', xs:'90vw'}, 
+      height: {lg:'60vh', xs:'70vh'}, 
+      display: 'flex', 
+      flexDirection:'column', 
+      justifyContent:'space-evenly'
+      }}>
+      <ThemeProvider theme = {theme}>
       <Typography align='center' variant='h3'>EDUCATION</Typography>
       <Box 
-        sx={{display:'flex'}}
-        mt={3}
+        sx={{
+          display:'flex',
+          mt:{lg:3, xs:2}
+        }}
+        
         >
           <Box mt={1}>
             <img height="100px" src="./Western Logo.jpg" alt='Western Logo'/>
@@ -20,7 +51,7 @@ export default function EducationDisplay(props) {
             mx={2}>
             <Typography fontWeight='bold'>Western University</Typography>
             <Box>
-              <Typography fontWeight='bold'>B.Eng in Electrical Engineering</Typography>
+              <Typography align='right' fontWeight='bold'>B.Eng in Electrical Engineering</Typography>
             </Box>
           </Box>
           <Box>
@@ -47,7 +78,7 @@ export default function EducationDisplay(props) {
             >
               <Typography fontWeight='bold'>General Assembly</Typography>
               <Box>
-                <Typography fontWeight='bold'>Software Engineering Intensive</Typography>
+                <Typography align='right' fontWeight='bold'>Software Engineering Intensive</Typography>
               </Box>
             </Box>
             <Box>
@@ -59,6 +90,7 @@ export default function EducationDisplay(props) {
             </Box>
           </Box>
       </Box>
+      </ThemeProvider>
     </Paper>
   )
 }

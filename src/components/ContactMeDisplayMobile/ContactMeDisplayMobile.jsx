@@ -4,7 +4,7 @@ import React, {useRef} from 'react'
 import SendIcon from '@mui/icons-material/Send';
 
 
-export default function ContactMeDisplay() {
+export default function ContactMeDisplayMobile() {
   const form = useRef();
 
   const sendEmail =(evt) => {
@@ -28,8 +28,8 @@ export default function ContactMeDisplay() {
       flexDirection: 'column',
       alignItems: 'center',
       mx: "5vw",
-      my: {lg:'7vh',xs:'2vh'},
-      py: '2vh',
+      my: {lg:'7vh',xs:'0vh'},
+      py: '1vh',
       width: {lg:"50vw", xs: '90vw'},
       bgcolor: 'primary.main',
       color: 'secondary.light'
@@ -42,8 +42,8 @@ export default function ContactMeDisplay() {
         onSubmit={sendEmail}
         sx={{
           mx:'2vw',
-          my:'2vh',
-          '& .MuiTextField-root': { m: 1, width: {lg:'50ch', xs: '30ch'}, background: '#FFFFFF'},
+          // my:'1vh',
+          '& .MuiTextField-root': { width: {lg:'50ch', xs: '30ch'}, background: '#FFFFFF'},
           '& .MuiButton-root':{ textPrimary:{color: 'primary.main'}}
         }}
         noValidate
@@ -76,10 +76,10 @@ export default function ContactMeDisplay() {
         defaultValue=""
         variant="filled"
         multiline
-        rows={5}
+        rows={3}
       />
-      <Box sx={{display:'flex', justifyContent:'flex-end'}} >
-      <Button sx={{mt: '10px', backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}} align='right' variant ="contained" size="large" type="submit" value="Send" endIcon={<SendIcon />}>Send</Button>
+      <Box sx={{mt:1,display:'flex', justifyContent:'flex-end'}} >
+      <Button sx={{ backgroundColor: "secondary.light", color:'primary.main', fontWeight: 'bold'}} align='right' variant ="contained" size="large" type="submit" value="Send" endIcon={<SendIcon />}>Send</Button>
       </Box>
       </Box>
         

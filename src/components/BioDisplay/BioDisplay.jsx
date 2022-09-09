@@ -1,5 +1,20 @@
 import React from 'react'
 import {Paper, Typography, Box} from "@mui/material"
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+
+let theme = createTheme({
+  palette:{
+    primary:{
+      main: '#1B721B'
+    },
+    secondary:{
+      light: '#FFFFFF',
+      main: '#D3D3D3',
+    }
+  },
+})
+
+theme = responsiveFontSizes(theme);
 
 export default function BioDisplay(props) {
   return (
@@ -13,6 +28,7 @@ export default function BioDisplay(props) {
         display: 'flex', 
         flexDirection:'column',
       }}>
+      <ThemeProvider theme = {theme}>
       <Box
         sx={{
           height: '8vh',
@@ -29,6 +45,7 @@ export default function BioDisplay(props) {
           justifyContent: 'center'}}>
       <Typography align='center' variant="h5">I am a full-stack developer with a history in engineering and a fascination with the intersection of technology and the arts. Leaving my career as an engineer led me to following a passion for coding into a career in full-stack development.</Typography>
       </Box>
+      </ThemeProvider>
     </Paper>
   )
 }
