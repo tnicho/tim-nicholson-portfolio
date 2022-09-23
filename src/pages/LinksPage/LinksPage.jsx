@@ -8,7 +8,8 @@ import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/s
 let theme = createTheme({
   palette:{
     primary:{
-      main: '#1B721B'
+      // main: '#1B721B'
+      main: '#002E20'
     },
     secondary:{
       light: '#FFFFFF',
@@ -28,11 +29,11 @@ export default function LinksPage(props){
       }}
     >
       <ThemeProvider theme = {theme}>
-      <Box sx={{display:'flex', flexDirection:{lg:'row', xs: 'column-reverse'}}}>
-        <Box sx={{display: {lg: 'flex', xs: 'none'}}}>
+      <Box sx={{display:'flex', flexDirection:{md:'row', xs: 'column-reverse'}}}>
+        <Box sx={{display: {md: 'flex', xs: 'none'}}}>
           <ContactMeDisplay/>
         </Box>
-        <Box sx={{display: {sm: 'none'}}}>
+        <Box sx={{display: {md: 'none'}}}>
           <ContactMeDisplayMobile/>
         </Box>
           <ResumeDisplay/>

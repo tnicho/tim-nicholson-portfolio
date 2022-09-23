@@ -28,9 +28,9 @@ export default function ContactMeDisplay() {
       flexDirection: 'column',
       alignItems: 'center',
       mx: "5vw",
-      my: {lg:'7vh',xs:'2vh'},
+      my: {md:'7vh',xs:'2vh'},
       py: '2vh',
-      width: {lg:"50vw", xs: '90vw'},
+      width: {md:"50vw", xs: '90vw'},
       bgcolor: 'primary.main',
       color: 'secondary.light'
     }}

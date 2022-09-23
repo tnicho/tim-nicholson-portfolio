@@ -11,16 +11,16 @@ export default function ResumeDisplay() {
         flexDirection: 'column',
         alignItems: 'center',
         mx: "5vw",
-        my: {lg:'7vh',xs:'2vh'},
+        my: {md:'7vh',xs:'2vh'},
         py: '2vh',
-        width: {lg:"50vw", xs: '90vw'},
+        width: {md:"50vw", xs: '90vw'},
         bgcolor: 'primary.main',
       }}
     >
-    <Box sx={{display: {lg: 'flex', xs: 'none'}}}>
+    <Box sx={{display: {md: 'flex', xs: 'none'}}}>
       <LinkDisplay/>
     </Box>
-    <Box sx={{display: {sm: 'none'}}}>
+    <Box sx={{display: {md: 'none'}}}>
     <LinkDisplayMobile/>
     </Box>
       

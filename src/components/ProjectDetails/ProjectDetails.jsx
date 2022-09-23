@@ -5,7 +5,8 @@ import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/s
 let theme = createTheme({
   palette:{
     primary:{
-      main: '#1B721B'
+      // main: '#1B721B'
+      main: '#002E20'
     },
     secondary:{
       light: '#FFFFFF',
@@ -24,8 +25,8 @@ export default function ProjectDetails(props) {
       mr: {lg: 15},
       mx: {xs: 5},
       mt:{lg:'20px', xs: '5px'},
-      height: {lg:'50vh', sm: '27vh'},
-      width: {lg:"40vw", sm:"80vw"}
+      height: {md:'50vh', sm: '27vh'},
+      width: {lg:"40vw", md: '50vw', sm:"80vw"}
     }}
     >
       <ThemeProvider theme = {theme}>
@@ -42,7 +43,7 @@ export default function ProjectDetails(props) {
         sx={{
           bgcolor: "secondary.light",
           borderBottom: 1,
-          height: {lg:'22vh', sm:"10vh"},
+          height: {md:'22vh', sm:"10vh"},
         }}>
           <Typography align= 'center' sx={{fontWeight:'bold', display:{xs:'none'}}}>Description</Typography>
           <Typography align='left' sx={{px:1}}>{props.description}</Typography>
@@ -52,7 +53,7 @@ export default function ProjectDetails(props) {
           bgcolor: 'primary.main',
           color: "secondary.light",
           borderBottom: 1,
-          height:{lg:'12vh',sm:'6vh'}
+          height:{md:'12vh',sm:'6vh'}
         }}>
             <Typography align= 'center' sx={{fontWeight:'bold'}}>Technology Used</Typography>
             <Typography align='left' sx={{p:1}}> {props.tech}</Typography>

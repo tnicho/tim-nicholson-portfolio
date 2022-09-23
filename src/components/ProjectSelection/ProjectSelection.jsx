@@ -7,9 +7,9 @@ export default function ProjectSelection(props) {
       <Box
         sx={{
           mt:'9vh',
-          mb:{lg:'2vh', xs:0},
+          mb:{shapeMargin:'2vh', xs:0},
           // display:'flex',
-          display:{lg:'flex', xs:'grid'},
+          display:{sm:'flex', xs:'grid'},
           gridTemplateRows: 'auto auto',
           gridTemplateColumns: 'auto auto',
           justifyContent: 'space-evenly'

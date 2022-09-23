@@ -7,7 +7,8 @@ import NavBarMobile from './components/NavBarMobile/NavBarMobile';
 const theme = createTheme({
   palette:{
     primary:{
-      main: '#1B721B'
+      // main: '#1B721B'
+      main: '#002E20'
     },
     secondary:{
       light: '#FFFFFF',
@@ -21,7 +22,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box className="`App">
         <CssBaseline/>
-        <Box sx={{display: {lg: 'flex', xs: 'none'}}}>
+        <Box sx={{display: {sm: 'flex', xs: 'none'}}}>
           <NavBar/>
         </Box>
         <Box sx={{display: {sm: 'none'}}}>

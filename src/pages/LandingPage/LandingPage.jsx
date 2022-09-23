@@ -15,6 +15,7 @@ export default class LandingPage extends Component {
     logoBackgroundColour: 'white',
     logoFillColour: 'black',
     logoStrokeColour: "black"
+
   }
   
 

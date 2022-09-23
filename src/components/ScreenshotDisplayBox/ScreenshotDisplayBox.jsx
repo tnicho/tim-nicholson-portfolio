@@ -8,11 +8,11 @@ export default function ProjectDisplay(props){
     <Paper
       elevation={20}
       sx={{
-          ml: {lg: 15, xs: 5},
-          mr: {lg: 10},
+          ml: {sm: 15, xs: 5},
+          mr: {sm: 10},
           my: 2,
-          height: {lg: 360, xs: 180},
-          width: {lg: 640, xs: 320}
+          height: {lg: 360, sm: 270, xs: 180},
+          width: {lg: 640, sm: 480, xs: 320}
         }}
       >
       <ScreenshotCarousel screenshots={props.screenshots}/>
